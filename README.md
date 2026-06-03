@@ -1,135 +1,39 @@
-<div align = "center">
+# StackPenguin Blog 🐧
 
-# Twilight
-
-A CMS integrated static blog template built with Astro framework.
-
-[**🖥️ Live Demo**](https://twilight.spr-aachen.com)
-[**📝 Documentation**](https://docs.twilight.spr-aachen.com/en)
-
-[![Bilibili](https://img.shields.io/badge/Bilibili-Intro-blue?logo=Bilibili)](https://space.bilibili.com/359461611/lists/6641229)&nbsp;
-[![YouTube](https://img.shields.io/badge/YouTube-Intro-red?logo=YouTube)](https://youtube.com/playlist?list=PLzjq8Hx1SRV7yqZQiACcCJmKPeg5D8JKe&si=Bcz2o0PF8MFvx8ec)
-
-<table style="width: 100%; table-layout: fixed;">
-   <tr>
-      <td colspan="5"><img alt="Desktop" src="docs/image/Desktop.jpg" style="max-width: 100%;"></td>
-   </tr>
-   <tr>
-      <td><img alt="Mobile_4" src="docs/image/Mobile_4.jpg" style="max-width: 100%;"></td>
-      <td><img alt="Mobile_2" src="docs/image/Mobile_2.jpg" style="max-width: 100%;"></td>
-      <td><img alt="Mobile_1" src="docs/image/Mobile_1.jpg" style="max-width: 100%;"></td>
-      <td><img alt="Mobile_3" src="docs/image/Mobile_3.jpg" style="max-width: 100%;"></td>
-      <td><img alt="Mobile_5" src="docs/image/Mobile_5.jpg" style="max-width: 100%;"></td>
-   </tr>
-</table>
-
-</div>
+歡迎來到 **StackPenguin Blog**！這是我的個人技術部落格，主要用來記錄與分享軟體開發、技術學習心得以及生活點滴。
 
 ---
 
-<div align = "center">
+## 📖 關於本部落格 (About)
 
-English | [**中文**](docs/README_ZH.md)
+在這個部落格中，我會不定期分享以下內容：
+- **開發筆記**：從前端、後端到開發環境配置的各種踩坑與教學。
+- **演算法與解題**：例如 LeetCode、UVA 等程式碼解題紀錄。
+- **好用工具推薦**：那些能大幅提升生產力的酷東西。
+- **專案展示**：我自己開發的 side projects 與技術展示。
 
-</div>
+希望這裡的文章能對您有所幫助！
 
+## ✨ 主要特色 (Features)
 
-## ✨ Features
+這個部落格基於 [Astro](https://astro.build/) 框架構建，擁有極高的效能與良好的開發體驗。
 
-### Content Management
-- **CMS Integration**: Headless CMS with OAuth for easy content management
-- **Pinned & Draft Posts**: Pin important posts or hide drafts in production
-- **Password-Protected Posts**: AES-encrypted articles with password access
-- **Automatic Navigation**: Auto-generated post navigation, archive, and TOC
-- **Data Visualization**: Visualized personal data like projects, skills, timeline
+- ⚡ **極致效能**：基於 Astro 架構，網頁載入速度極快。
+- 🎨 **現代化設計**：流暢的微動畫、圓角設計與自適應 (RWD) 響應式排版。
+- 🌗 **深淺色模式**：支援一鍵切換亮色 (Light) 與暗色 (Dark) 主題。
+- 📝 **Markdown 支援**：文章使用 Markdown 撰寫，支援數學公式、Mermaid 圖表與高亮程式碼。
+- 🤖 **智慧語法高亮**：內建自動辨識並上色的客製化程式碼引擎。
+- 🔍 **內建搜尋**：支援快速全站搜尋，輕鬆找到需要的內容。
 
-### Content Pages
-- **Blog Posts**: Full-featured markdown blogging with tags and categories
-- **Projects & Skills Showcase**: Visual galleries for your portfolio
-- **Timeline**: Biography page with education, work, achievements, and skills
-- **Diary**: Short-form microblog-style posts with timestamps
-- **Albums**: Image gallery with Fancybox lightbox integration
-- **Friends Links**: Friend link exchange with icons and descriptions
-- **RSS & Atom Feeds**: Dedicated info pages with auto-generated XML feeds
+## 🛠️ 技術堆疊 (Tech Stack)
 
-### Markdown Enhancements
-- **GitHub Repository Cards**: Embed live repo cards via `::github{repo="..."}`
-- **Music Cards**: Inline audio player with lyrics via `::music{...}`
-- **Admonitions / Callouts**: Note, tip, warning, and caution styled blocks
-- **Code Block Enhancements**: Copy button, collapse, line numbers, language badges
-- **Mermaid Diagrams**: Render ` ```mermaid ` code blocks as diagrams
-- **KaTeX Math Rendering**: LaTeX math expressions with `$...$` and `$$...$$`
+- **框架**: [Astro](https://astro.build/)
+- **樣式**: Tailwind CSS
+- **部署**: [Vercel](https://vercel.com/)
+- **套件**: `highlight.js`, `sharp`
 
-### UI Components
-- **Loading Overlay**: Configurable splash screen with spinner animation
-- **Sidebar Widget System**: Configurable profile, announcement, TOC, categories, tags, directory, statistics etc.
-- **Analytics Support**: Umami analytics integration for visitor insights
-- **Comment System**: Twikoo-powered comment functionality
-- **Music Player**: Background music with meting API or local playlist support
-- **PIO Widget**: Interactive Live2D character with customizable dialog
+---
 
-### Visual Effects
-- **Smooth Transition Animations**: Polished page component transition animations
-- **Customizable Theme Colors**: Real-time customizable color schemes
-- **Dynamic Wallpaper System**: Carousel support with multiple display modes
-- **Immersive Particle Effects**: Highly customizable animated particles
-- **Custom Fonts**: Configurable web fonts via CSS links or local files
+> *"Make each day your masterpiece."*
 
-### Compatibility
-- **Modern & Responsive Design**: Fully optimized for desktop and mobile devices
-- **Multilingual Capability**: 3 UI languages (en/zh/ja) & 12+ page translation languages
-- **Multiple Deployment Adapters**: Support Cloudflare, Netlify, Vercel, EdgeOne and other static hosting platforms
-- **Docker Support**: Ready-to-use Docker and docker-compose setup
-
-
-## 💻 Configuration
-
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/Spr-Aachen/Twilight.git
-   # Navigate to the project directory
-   cd Twilight
-   ```
-
-2. **Install dependencies:**
-   ```bash
-   # Install pnpm if not already installed
-   npm install -g pnpm
-   # Install project dependencies
-   pnpm install
-   ```
-
-3. **Configure your blog:**
-   - [Customize blog settings](https://docs.twilight.spr-aachen.com/en/config/core) inside `twilight.config.yaml`
-   - [Manage site content](https://docs.twilight.spr-aachen.com/en/config/content) inside `src/content`
-
-4. **Start the development server:**
-   ```bash
-   pnpm dev
-   ```
-
-
-## 🚀 Deployment
-
-Deploy your blog to any static hosting platform
-
-
-## ⚡ Commands
-
-| Command                     | Action                        |
-|:----------------------------|:------------------------------|
-| ~~`pnpm lint`~~             | ~~Check and fix code issues~~ |
-| ~~`pnpm format`~~           | ~~Format code with Biome~~    |
-| `pnpm check`                | Run Astro error checking      |
-| `pnpm dev`                  | Start local dev server        |
-| `pnpm build`                | Build site to `./dist/`       |
-| `pnpm preview`              | Preview build locally         |
-| `pnpm astro ...`            | Run Astro CLI commands        |
-| `pnpm new-post <filename>`  | Create a new blog post        |
-
-
-## 🙏 Acknowledgements
-
-- Prototype   - [Fuwari](https://github.com/saicaca/fuwari)
-- Inspiration - [Yukina](https://github.com/WhitePaper233/yukina) & [Mizuki](https://github.com/matsuzaka-yuki/Mizuki)
-- Translation - [translate](https://gitee.com/mail_osc/translate)
+如果您喜歡這裡的文章，歡迎將網站加入書籤，或是來 GitHub 給我一顆 ⭐！
