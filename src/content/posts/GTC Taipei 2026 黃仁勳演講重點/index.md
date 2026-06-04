@@ -2,7 +2,7 @@
 title: GTC Taipei 2026 黃仁勳演講重點
 published: 2026-06-04
 description: "本文深入分析 NVIDIA 執行長黃仁勳在最近演講中提到的五大重點，包括代理型 AI、Vera CPU、企業級代理工具包、PC 產業的未來以及實體 AI 的深層佈局等。"
-cover: "./nvidia-future-technology.jpg"
+cover: "./gtc-taipei-2026-keynote.jpg"
 coverInContent: false
 tags:
   - NVIDIA
