@@ -1,13 +1,17 @@
 ---
-layout: post
 title: Mac 儲存空間大掃除實戰：從 56GB 拯救到 84GB 的過程紀錄
-date: 2026-06-04 16:45:00
+published: 2026-06-04
+description: "這篇筆記紀錄了一次幫 Mac 進行深度儲存空間清理的過程，成功將可用空間從 56 GB 提升至近 85 GB！"
+cover: "./mac-storage-cleanup.jpg"
+coverInContent: false
 tags:
   - macOS
   - 清理
   - 教學
-categories:
-  - 技術
+  - 儲存空間
+  - 技巧
+category: 技術
+draft: false
 ---
 
 這篇筆記紀錄了一次幫 Mac 進行深度儲存空間清理的過程，成功將可用空間從 56 GB 提升至近 85 GB！
@@ -57,3 +61,4 @@ macOS 系統與各種應用程式會在 `~/Library/Caches` 累積大量的暫存
 - Chrome 更新 Bug 暫存：**~12 GB**
 
 如果你也發現 Mac 的空間莫名其妙被吃掉，不妨照著上述的三個方向去檢查看看！
+

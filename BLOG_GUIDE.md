@@ -1,7 +1,8 @@
 # StackPenguin Blog 使用與維護指南
 
 這份文件記錄了本部落格專案的日常操作流程與設定方式，方便您未來快速上手與維護。
-
+npm run auto-post draft.md
+npx vercel --prod
 ---
 
 ## 1. 本地開發與預覽 (Local Development)
