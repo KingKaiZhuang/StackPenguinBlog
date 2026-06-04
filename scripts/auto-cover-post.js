@@ -99,6 +99,28 @@ Rules:
     );
 }
 
+async function highlightArticle(article) {
+    const response = await client.chat.completions.create({
+        model: "gpt-4o-mini",
+        messages: [
+            {
+                role: "system",
+                content: `You are an expert editor. Your task is to automatically highlight important phrases in the provided markdown article.
+Rules:
+1. Wrap key insights, important terms, or core conclusions with <mark>...</mark>.
+2. DO NOT over-highlight. Highlight only the most crucial parts.
+3. DO NOT change ANY other text, formatting, code blocks, or markdown syntax. Keep the exact original text.
+4. Only return the modified markdown content, with no extra conversational text.`
+            },
+            {
+                role: "user",
+                content: article
+            }
+        ]
+    });
+    return response.choices[0].message.content.trim();
+}
+
 async function generateImage(prompt) {
     const result =
         await client.images.generate({
@@ -194,6 +216,9 @@ async function main() {
                 contentBody = contentBody.slice(endMatch + 4).trimStart();
             }
         }
+
+        console.log("🖍️ 自動幫文章畫重點...");
+        contentBody = await highlightArticle(contentBody);
 
         const frontmatter = `---
 title: ${meta.title}
