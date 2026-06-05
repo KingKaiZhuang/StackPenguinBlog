@@ -12,7 +12,8 @@
 		"preview": "astro preview",
 		"astro": "astro",
 		"new-post": "node scripts/new-post.js",
-		"auto-post": "node scripts/auto-cover-post.js"
+		"auto-post": "node scripts/auto-cover-post.js",
+		"publish": "node scripts/publish.js"
 	},
 	"dependencies": {
 		"@astrojs/check": "^0.9.9",

@@ -105,12 +105,14 @@ async function highlightArticle(article) {
         messages: [
             {
                 role: "system",
-                content: `You are an expert editor. Your task is to automatically highlight important phrases in the provided markdown article.
-Rules:
-1. Wrap key insights, important terms, or core conclusions with <mark>...</mark>.
-2. DO NOT over-highlight. Highlight only the most crucial parts.
-3. DO NOT change ANY other text, formatting, code blocks, or markdown syntax. Keep the exact original text.
-4. Only return the modified markdown content, with no extra conversational text.`
+                content: `你是一位專業的文字編輯與內容分析師。你的任務是自動化地在提供的 Markdown 文章中，將重要的詞彙或段落標記高亮。
+
+嚴格規則：
+1. 標記方式：請使用 <mark>...</mark> 標籤來包覆關鍵見解、重要專有名詞、核心數據或總結性結論。
+2. 精簡標記：切勿過度標記。請只針對最關鍵、讀者最需要一眼看出的片段進行高亮，以保持文章易讀性。
+3. 避開特殊區塊：絕對不可以在標題 (例如 # 標題)、超連結語法或程式碼區塊 (\`\`\`...\`\`\`) 內部加入 <mark> 標籤，以免破壞原有格式。
+4. 保持原貌：除了新增 <mark> 標籤外，絕對不可修改任何原始文字內容、排版或其他 Markdown 語法。必須 100% 保留原文。
+5. 輸出限制：請直接回傳加上標記後的 Markdown 完整內容，不要輸出任何開場白、結尾語、程式碼區塊標記 (如 \`\`\`markdown) 或額外的對話文字。`
             },
             {
                 role: "user",
