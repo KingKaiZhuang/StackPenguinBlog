@@ -740,3 +740,9 @@
     color: inherit;
     border-radius: 0.25em;
 }
+
+/* 深色模式下的螢光筆顏色 (淺藍色) */
+:root.dark .custom-md mark {
+    background-color: oklch(0.33 0.035 var(--hue));
+    color: oklch(89.418% 0.05288 252.832);
+}

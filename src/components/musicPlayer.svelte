@@ -660,7 +660,7 @@ onDestroy(() => {
 </div>
 {/if}
 
-<div class="music-player hidden md:flex fixed bottom-4 right-4 z-101 transition-all duration-300 ease-in-out onload-animation-up flex-col items-end pointer-events-none"
+<div class="music-player flex fixed bottom-4 right-4 z-101 transition-all duration-300 ease-in-out onload-animation-up flex-col items-end pointer-events-none"
      class:expanded={!isCollapsed}
      class:collapsed={isCollapsed}>
     {#if showPlaylist}
