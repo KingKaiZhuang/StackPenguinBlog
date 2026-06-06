@@ -2,7 +2,7 @@
 title: Daphne 無法抓取 CSS 解決方法
 published: 2024-11-24
 description: "本文介紹了如何解決在使用 Daphne 部署 Django 應用時靜態文件無法正常加載的問題，特別是如何使用 WhiteNoise 來提供靜態文件支援。"
-cover: "./whitenoise-configuration.jpg"
+cover: "https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/Daphne%20%E7%84%A1%E6%B3%95%E6%8A%93%E5%8F%96%20CSS%20%E8%A7%A3%E6%B1%BA%E6%96%B9%E6%B3%95/whitenoise-configuration.jpg"
 coverInContent: false
 tags:
   - Python Django

@@ -2,7 +2,7 @@
 title: Unity 場景切換以及 Data 共享
 published: 2025-12-04
 description: "這篇文章探討 Unity 中的場景切換以及如何共享資料，包含 SongSelect 和 SongDetailUI 的示範。"
-cover: "./cleanshot-2025-12-04-at-10-55-31.jpg"
+cover: "https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/Unity%20%E5%A0%B4%E6%99%AF%E5%88%87%E6%8F%9B%E4%BB%A5%E5%8F%8A%20Data%20%E5%85%B1%E4%BA%AB/cleanshot-2025-12-04-at-10-55-31.jpg"
 coverInContent: false
 tags:
   - Unity
@@ -18,11 +18,11 @@ draft: false
 
 ## SongSelect Scene
 
-![](./CleanShot-2025-12-04-at-10-55-31-1.jpg)
+![](https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/Unity%20%E5%A0%B4%E6%99%AF%E5%88%87%E6%8F%9B%E4%BB%A5%E5%8F%8A%20Data%20%E5%85%B1%E4%BA%AB/CleanShot-2025-12-04-at-10-55-31-1.jpg)
 
 按下Start按鈕開始，要把資料帶到下一個遊戲頁面。
 
-![](./CleanShot-2025-12-04-at-10-56-41.jpg)
+![](https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/Unity%20%E5%A0%B4%E6%99%AF%E5%88%87%E6%8F%9B%E4%BB%A5%E5%8F%8A%20Data%20%E5%85%B1%E4%BA%AB/CleanShot-2025-12-04-at-10-56-41.jpg)
 
 ## MusicData.cs
 
@@ -212,7 +212,7 @@ public class GameMusicPlayer : MonoBehaviour
 
 成功取得音樂
 
-![](./CleanShot-2025-12-04-at-11-02-07.jpg)
+![](https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/Unity%20%E5%A0%B4%E6%99%AF%E5%88%87%E6%8F%9B%E4%BB%A5%E5%8F%8A%20Data%20%E5%85%B1%E4%BA%AB/CleanShot-2025-12-04-at-11-02-07.jpg)
 
 以上就是轉場還有資料怎麼使用的一個概略展示。
 

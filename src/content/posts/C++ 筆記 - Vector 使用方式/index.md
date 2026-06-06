@@ -2,7 +2,7 @@
 title: C++ 筆記 - Vector 使用方式
 published: 2024-11-20
 description: "這篇文章介紹了 C++ 中 vector 的基本操作、增刪元素的方法，以及常用的屬性和方法，適合學習與實踐 C++ 的程式設計者。"
-cover: "./c-plus-plus-vector-tutorial.jpg"
+cover: "https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/C%2B%2B%20%E7%AD%86%E8%A8%98%20-%20Vector%20%E4%BD%BF%E7%94%A8%E6%96%B9%E5%BC%8F/c-plus-plus-vector-tutorial.jpg"
 coverInContent: false
 tags:
   - C++

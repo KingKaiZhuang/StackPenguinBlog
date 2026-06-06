@@ -2,7 +2,7 @@
 title: 在 Mac vscode 中使用 Code Runner 和 C/C++ 插件來編譯與執行 C++ 程式
 published: 2026-06-03
 description: "這篇文章將詳細說明如何使用 VSCode 的 Code Runner 和 C/C++ 插件來編譯與執行 C++ 程式，並介紹在 Mac 安裝 Clang 編譯器的方法。"
-cover: "./vscode-c-plus-plus.jpg"
+cover: "https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/%E5%9C%A8%20Mac%20vscode%20%E4%B8%AD%E4%BD%BF%E7%94%A8%20Code%20Runner%20%E5%92%8C%20C-C%2B%2B%20%E6%8F%92%E4%BB%B6%E4%BE%86%E7%B7%A8%E8%AD%AF%E8%88%87%E5%9F%B7%E8%A1%8C%20C%2B%2B%20%E7%A8%8B%E5%BC%8F/vscode-c-plus-plus.jpg"
 coverInContent: false
 tags:
   - 開發環境

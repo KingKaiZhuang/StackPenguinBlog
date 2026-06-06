@@ -2,7 +2,7 @@
 title: Line Bot 與 Chatgpt應用 02 - 執行程式
 published: 2024-09-26
 description: "本教學將帶領你使用 Replit 平台運行由 GPT 支援的 Line Bot，並逐步指導你如何設定和執行這個 Python 程式碼。"
-cover: "./replit-python-execution.jpg"
+cover: "https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/Line%20Bot%20%E8%88%87%20Chatgpt%E6%87%89%E7%94%A8%2002%20-%20%E5%9F%B7%E8%A1%8C%E7%A8%8B%E5%BC%8F/replit-python-execution.jpg"
 coverInContent: false
 tags:
   - Line Bot

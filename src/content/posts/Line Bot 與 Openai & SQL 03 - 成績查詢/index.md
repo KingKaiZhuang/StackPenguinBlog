@@ -2,7 +2,7 @@
 title: Line Bot 與 Openai & SQL 03 - 成績查詢
 published: 2024-10-02
 description: "本教學文件將指導您如何建立一個基於 MySQL 的學生成績管理系統，並通過 LINE Bot 與 OpenAI 的整合來查詢和管理數據。"
-cover: "./student-score-demo.jpg"
+cover: "https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/Line%20Bot%20%E8%88%87%20Openai%20%26%20SQL%2003%20-%20%E6%88%90%E7%B8%BE%E6%9F%A5%E8%A9%A2/student-score-demo.jpg"
 coverInContent: false
 tags:
   - Line Bot

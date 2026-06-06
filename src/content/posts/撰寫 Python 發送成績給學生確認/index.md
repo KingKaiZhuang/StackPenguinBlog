@@ -2,7 +2,7 @@
 title: 撰寫 Python 發送成績給學生確認
 published: 2024-11-02
 description: "此 Python 程式使用 `smtplib` 庫來自動發送學生成績通知郵件，並提供詳細步驟及完整程式碼。"
-cover: "./python-email-notification.jpg"
+cover: "https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/%E6%92%B0%E5%AF%AB%20Python%20%E7%99%BC%E9%80%81%E6%88%90%E7%B8%BE%E7%B5%A6%E5%AD%B8%E7%94%9F%E7%A2%BA%E8%AA%8D/python-email-notification.jpg"
 coverInContent: false
 tags:
   - Python Email

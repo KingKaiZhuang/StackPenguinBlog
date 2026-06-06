@@ -1,6 +1,33 @@
 import hljs from 'highlight.js';
 import { visit } from 'unist-util-visit';
 
+// Map highlight.js languages to Shiki supported languages, or ignore them if unsupported
+const langMap = {
+    'arduino': 'cpp',
+    'basic': 'vb',
+    'dts': 'c',
+    'routeros': 'bash',
+    'pgsql': 'sql',
+    'actionscript': 'ts',
+    'vbnet': 'vb',
+    'dos': 'bat',
+    'angelscript': 'txt',
+    'abnf': 'txt',
+    'ebnf': 'txt',
+    'nsis': 'txt',
+    'autohotkey': 'txt',
+    'mathematica': 'txt',
+    'gams': 'txt',
+    'fortran': 'txt',
+    'livecodeserver': 'txt',
+    'isbl': 'txt',
+    'moonscript': 'txt',
+    'gauss': 'txt',
+    'arcade': 'txt',
+    'crmsh': 'txt',
+    'lasso': 'txt'
+};
+
 export function remarkGuessLang() {
     return (tree) => {
         visit(tree, 'code', (node) => {
@@ -15,7 +42,12 @@ export function remarkGuessLang() {
 
                     const result = hljs.highlightAuto(node.value);
                     if (result.language) {
-                        node.lang = result.language;
+                        const mappedLang = langMap[result.language];
+                        if (mappedLang === 'txt') {
+                            node.lang = 'txt';
+                        } else {
+                            node.lang = mappedLang || result.language;
+                        }
                     }
                 }
             }

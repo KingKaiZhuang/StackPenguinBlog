@@ -2,7 +2,7 @@
 title: HackHub 實戰紀錄 - Wi-Fi 網路安全測試與密碼破解
 published: 2026-06-06
 description: "以下為搭配實際操作指令與終端機輸出畫面，詳細梳理的網路安全測試與密碼破解流程。這是一次使用 HackHub 平台學習的實戰紀實。"
-cover: "./hackhub-practical-record.jpg"
+cover: "https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/HackHub%20%E5%AF%A6%E6%88%B0%E7%B4%80%E9%8C%84/hackhub-practical-record.jpg"
 coverInContent: false
 tags:
   - Wi-Fi

@@ -2,7 +2,7 @@
 title: Next.js v16 基本常識
 published: 2025-11-26
 description: "這篇文章介紹了Next.js v16的基本使用，包括console.log的使用方式、路由設計、組件管理及錯誤處理等主題。"
-cover: "./loading-ui-example.jpg"
+cover: "https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/Next.js%20v16%20%E5%9F%BA%E6%9C%AC%E5%B8%B8%E8%AD%98/loading-ui-example.jpg"
 coverInContent: false
 tags:
   - Next.js
@@ -44,13 +44,13 @@ export default Home
 
 正常來說只會在伺服器端看到。
 
-![](./CleanShot-2025-11-26-at-21-17-46-1024x664.jpg)
+![](https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/Next.js%20v16%20%E5%9F%BA%E6%9C%AC%E5%B8%B8%E8%AD%98/CleanShot-2025-11-26-at-21-17-46-1024x664.jpg)
 
 可以看到在瀏覽器一樣出現了標示Server的Console內容。
 
 不過不用擔心，這只是在開發的時候方便觀察而已。
 
-![](./CleanShot-2025-11-26-at-21-16-14-1024x662.jpg)
+![](https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/Next.js%20v16%20%E5%9F%BA%E6%9C%AC%E5%B8%B8%E8%AD%98/CleanShot-2025-11-26-at-21-16-14-1024x662.jpg)
 
 這個時候有趣的來了，我要來測試在Client端寫console.log會發生什麼事情，我在app底下建立components資料夾並建立一個hello.tsx檔案。
 
@@ -120,13 +120,13 @@ export default Home
 
 這時候到瀏覽器觀察。會發現有兩個一樣的log。
 
-![](./CleanShot-2025-11-26-at-21-35-15-1024x667.jpg)
+![](https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/Next.js%20v16%20%E5%9F%BA%E6%9C%AC%E5%B8%B8%E8%AD%98/CleanShot-2025-11-26-at-21-35-15-1024x667.jpg)
 
 你可能會問為什麼？我用一張圖給你看看。
 
 在Server端會先建立好static shell，之後在Client端渲染。
 
-![](./image-13.jpg)
+![](https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/Next.js%20v16%20%E5%9F%BA%E6%9C%AC%E5%B8%B8%E8%AD%98/image-13.jpg)
 
 React
 
@@ -186,11 +186,11 @@ babel-plugin-react-compiler 能做的事
 
 ## Router
 
-![](./image-10.jpg)
+![](https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/Next.js%20v16%20%E5%9F%BA%E6%9C%AC%E5%B8%B8%E8%AD%98/image-10.jpg)
 
 你會看到一個layout.tsk，可以想成是一個網站的佈局，像是header跟footer可以先放好位置，這樣每一個頁面就不必再重複渲染，然後{children}是每一個頁面的進入點，這邊舉個例子像這樣：
 
-![](./----2-1021x1024.jpg)
+![](https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/Next.js%20v16%20%E5%9F%BA%E6%9C%AC%E5%B8%B8%E8%AD%98/----2-1021x1024.jpg)
 
 Page是你的網站首頁的內容，一進去會先吃到app/page.tsx然後傳到layout.tsx裡面的{children}這裡。
 
@@ -232,7 +232,7 @@ export default Home
 
 觀察一下瀏覽器的 Elements，已經把app/page.tsx的內容傳到{children}並顯示。
 
-![](./CleanShot-2025-11-26-at-22-18-53-1024x667.jpg)
+![](https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/Next.js%20v16%20%E5%9F%BA%E6%9C%AC%E5%B8%B8%E8%AD%98/CleanShot-2025-11-26-at-22-18-53-1024x667.jpg)
 
 > 補充：Components不能放在app/資料夾內，app是放Page的地方。
 
@@ -266,13 +266,13 @@ export default Page
 
 以下是官方文件的Route示意圖：
 
-![](./image-14-1024x336.jpg)
+![](https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/Next.js%20v16%20%E5%9F%BA%E6%9C%AC%E5%B8%B8%E8%AD%98/image-14-1024x336.jpg)
 
 ### Nested Routes 巢狀路由
 
 我建立了一個dashboard，並在dashboard在建立兩個資料夾分別是analytics跟users。
 
-![](./image-15.jpg)
+![](https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/Next.js%20v16%20%E5%9F%BA%E6%9C%AC%E5%B8%B8%E8%AD%98/image-15.jpg)
 
 ```
 // analytics/page.tsx
@@ -320,17 +320,17 @@ export default Users
 
 進到 http://localhost:3000/dashboard/analytics 就可以看到 Analytics
 
-![](./CleanShot-2025-11-27-at-10-34-45-1024x657.jpg)
+![](https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/Next.js%20v16%20%E5%9F%BA%E6%9C%AC%E5%B8%B8%E8%AD%98/CleanShot-2025-11-27-at-10-34-45-1024x657.jpg)
 
 進到 http://localhost:3000/dashboard/users 就可以看到 Users
 
-![](./CleanShot-2025-11-27-at-10-33-25-1024x657.jpg)
+![](https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/Next.js%20v16%20%E5%9F%BA%E6%9C%AC%E5%B8%B8%E8%AD%98/CleanShot-2025-11-27-at-10-33-25-1024x657.jpg)
 
 那我們可能會有很多User，每個User都要有自己的Dashboard介面。
 
 因此先在users底下建立一個\[id\]資料夾，他可以根據你傳進來的params，對應到不同Users的頁面資料。
 
-![](./image-17.jpg)
+![](https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/Next.js%20v16%20%E5%9F%BA%E6%9C%AC%E5%B8%B8%E8%AD%98/image-17.jpg)
 
 將每個User外面包一個Link，對應到不同的使用者。將參數傳送到users/\[id\]。
 
@@ -444,7 +444,7 @@ or
 { id: "4" }
 ```
 
-![](./CleanShot-2025-11-27-at-12-47-38-1024x664.jpg)
+![](https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/Next.js%20v16%20%E5%9F%BA%E6%9C%AC%E5%B8%B8%E8%AD%98/CleanShot-2025-11-27-at-12-47-38-1024x664.jpg)
 
 ## Layout 版面設定
 
@@ -500,13 +500,13 @@ about的話也是會忽略(root)資料夾，指向 http://localhost:3000/about
 
 dashboard也是相同的道理，外層(dashboard)不會吃，會吃內層的dashboard資料夾。
 
-![](./CleanShot-2025-11-27-at-22-47-08-1024x588.jpg)
+![](https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/Next.js%20v16%20%E5%9F%BA%E6%9C%AC%E5%B8%B8%E8%AD%98/CleanShot-2025-11-27-at-22-47-08-1024x588.jpg)
 
 我們可以分別在(dashboard)跟(root)設定不同的layout。並且把最外部原來的page.tsx移動到(root)。
 
 但是要注意，使用括號()的資料夾底下，只能在其中一個保留page.tsx，否則會出現以下錯誤。
 
-![](./CleanShot-2025-11-27-at-22-43-19-1024x670.jpg)
+![](https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/Next.js%20v16%20%E5%9F%BA%E6%9C%AC%E5%B8%B8%E8%AD%98/CleanShot-2025-11-27-at-22-43-19-1024x670.jpg)
 
 ## Error Handling 錯誤處理
 
@@ -584,7 +584,7 @@ export default function Error({
 }
 ```
 
-![](./CleanShot-2025-11-28-at-10-25-54-1024x578.jpg)
+![](https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/Next.js%20v16%20%E5%9F%BA%E6%9C%AC%E5%B8%B8%E8%AD%98/CleanShot-2025-11-28-at-10-25-54-1024x578.jpg)
 
 可以看到在畫面有顯示文字，同時也可以在console中看到錯誤。
 
@@ -592,7 +592,7 @@ export default function Error({
 > 
 > 所以return的部分顯示在前端，useEffect的部分是顯示在後端。
 
-![](./CleanShot-2025-11-28-at-10-28-43-1024x670.jpg)
+![](https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/Next.js%20v16%20%E5%9F%BA%E6%9C%AC%E5%B8%B8%E8%AD%98/CleanShot-2025-11-28-at-10-28-43-1024x670.jpg)
 
 預設的狀態只能看到簡陋的一些文字，無法讓使用者了解目前的狀態。
 
@@ -600,7 +600,7 @@ export default function Error({
 
 不用擔心重要的資訊外露，因為在client端不會顯示重要訊息，我是把它想成美化error頁面。
 
-![](./CleanShot-2025-11-28-at-10-33-17-1024x670.jpg)
+![](https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/Next.js%20v16%20%E5%9F%BA%E6%9C%AC%E5%B8%B8%E8%AD%98/CleanShot-2025-11-28-at-10-33-17-1024x670.jpg)
 
 ## Loading UI 載入畫面
 
@@ -636,7 +636,7 @@ const Page = async () => {
 export default Page
 ```
 
-![](./CleanShot-2025-11-28-at-12-17-25.jpg)
+![](https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/Next.js%20v16%20%E5%9F%BA%E6%9C%AC%E5%B8%B8%E8%AD%98/CleanShot-2025-11-28-at-12-17-25.jpg)
 
 只要在app/底下建立一個loading.tsx，就會有Loading的效果，它的作用範圍是**全站**（global loading UI）。
 
@@ -806,11 +806,11 @@ export default AlbumsPage;
 
 回到伺服器端跟客戶端之間的差別，伺服器端的方式有更多好處，像是載入的時間比較快，FCP表現更好。
 
-![良好的 FCP 值為 1.8 秒或更短，不良的值為 3.0 秒以上，介於兩者之間的值則需要改善](./good-fcp-values-18.jpg)
+![良好的 FCP 值為 1.8 秒或更短，不良的值為 3.0 秒以上，介於兩者之間的值則需要改善](https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/Next.js%20v16%20%E5%9F%BA%E6%9C%AC%E5%B8%B8%E8%AD%98/good-fcp-values-18.jpg)
 
 也因為在server就先載入好，所以在瀏覽器可以查看到所有原始碼SEO相對也會比較好。
 
-![](./image-18.jpg)
+![](https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/Next.js%20v16%20%E5%9F%BA%E6%9C%AC%E5%B8%B8%E8%AD%98/image-18.jpg)
 
 > 參考 [JavaScript Mastery](https://www.youtube.com/@javascriptmastery) 的教學影片 [https://www.youtube.com/watch?v=I1V9YWqRIeI&t=1540s](https://www.youtube.com/watch?v=I1V9YWqRIeI&t=1540s)
 

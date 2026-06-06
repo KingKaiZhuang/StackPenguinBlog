@@ -2,7 +2,7 @@
 title: Pytorch 快速入門
 published: 2025-10-20
 description: "本篇文章將介紹如何使用 Pytorch 建立和訓練簡單的神經網路，以執行 Fashion-MNIST 影像分類任務。"
-cover: "./pytorch-quickstart.jpg"
+cover: "https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/Pytorch%20%E5%BF%AB%E9%80%9F%E5%85%A5%E9%96%80/pytorch-quickstart.jpg"
 coverInContent: false
 tags:
   - Pytorch

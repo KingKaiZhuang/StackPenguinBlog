@@ -2,7 +2,7 @@
 title: Ubuntu 新增 4GB Swap 教學文件
 published: 2025-11-13
 description: "本篇教學將詳細介紹如何在 Ubuntu 系統中新增 4GB 的 swap 空間，包括每個步驟的指令與解說。"
-cover: "./ubuntu-add-swap.jpg"
+cover: "https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/Ubuntu%20%E6%96%B0%E5%A2%9E%204GB%20Swap%20%E6%95%99%E5%AD%B8%E6%96%87%E4%BB%B6/ubuntu-add-swap.jpg"
 coverInContent: false
 tags:
   - Ubuntu

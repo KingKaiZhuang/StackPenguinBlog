@@ -2,7 +2,7 @@
 title: Nginx + Certbot 為 WordPress 網站設定 HTTPS
 published: 2025-03-30
 description: "本教學將說明如何透過 Certbot 申請 Let's Encrypt 免費 SSL 憑證，並整合至 Nginx，成功為你的 WordPress 網站啟用 HTTPS。"
-cover: "./nginx-certbot-https.jpg"
+cover: "https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/Nginx%20%2B%20Certbot%20%E7%82%BA%20WordPress%20%E7%B6%B2%E7%AB%99%E8%A8%AD%E5%AE%9A%20HTTPS/nginx-certbot-https.jpg"
 coverInContent: false
 tags:
   - Nginx

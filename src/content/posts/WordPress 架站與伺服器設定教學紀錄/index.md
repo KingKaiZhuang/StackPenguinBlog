@@ -2,7 +2,7 @@
 title: WordPress 架站與伺服器設定教學紀錄
 published: 2025-03-31
 description: "這篇文章詳細記錄了如何在雲端主機上設定 WordPress，包括環境設定、Nginx 與 PHP 配置、SSL 憑證設定等步驟。"
-cover: "./image-3.jpg"
+cover: "https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/WordPress%20%E6%9E%B6%E7%AB%99%E8%88%87%E4%BC%BA%E6%9C%8D%E5%99%A8%E8%A8%AD%E5%AE%9A%E6%95%99%E5%AD%B8%E7%B4%80%E9%8C%84/image-3.jpg"
 coverInContent: false
 tags:
   - WordPress
@@ -28,7 +28,7 @@ draft: false
 
 - UFW 防火牆狀態： `443/tcp ALLOW 80/tcp ALLOW 22/tcp DENY`
 
-![](./image-1.jpg)
+![](https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/WordPress%20%E6%9E%B6%E7%AB%99%E8%88%87%E4%BC%BA%E6%9C%8D%E5%99%A8%E8%A8%AD%E5%AE%9A%E6%95%99%E5%AD%B8%E7%B4%80%E9%8C%84/image-1.jpg)
 
 * * *
 
@@ -45,7 +45,7 @@ draft: false
     
     - 密碼：自訂（建議設定複雜密碼）
 
-![](./image-2.jpg)
+![](https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/WordPress%20%E6%9E%B6%E7%AB%99%E8%88%87%E4%BC%BA%E6%9C%8D%E5%99%A8%E8%A8%AD%E5%AE%9A%E6%95%99%E5%AD%B8%E7%B4%80%E9%8C%84/image-2.jpg)
 
 * * *
 
@@ -110,7 +110,7 @@ draft: false
     
     - 建議將佈署流程整合進 Git 操作中以利更新
 
-![](./image-3-1.jpg)
+![](https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/WordPress%20%E6%9E%B6%E7%AB%99%E8%88%87%E4%BC%BA%E6%9C%8D%E5%99%A8%E8%A8%AD%E5%AE%9A%E6%95%99%E5%AD%B8%E7%B4%80%E9%8C%84/image-3-1.jpg)
 
 * * *
 

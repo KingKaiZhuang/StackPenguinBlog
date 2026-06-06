@@ -2,7 +2,7 @@
 title: 如何在 Linode 用 Docker 架設 n8n
 published: 2025-11-05
 description: "這篇文章詳盡介紹如何在 Linode 上使用 Docker 架設 n8n，涵蓋了每一步驟及潛在錯誤的解決方式，並講解了如何通過 Cloudflare Tunnel 提供安全的 HTTPS 連接。"
-cover: "./cloudflare-tunnel-diagram.jpg"
+cover: "https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/%E5%A6%82%E4%BD%95%E5%9C%A8%20Linode%20%E7%94%A8%20Docker%20%E6%9E%B6%E8%A8%AD%20n8n/cloudflare-tunnel-diagram.jpg"
 coverInContent: false
 tags:
   - Docker
@@ -211,7 +211,7 @@ cloudflared tunnel login
 cloudflared tunnel login
 ```
 
-![](./image-1-1024x557.jpg)
+![](https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/%E5%A6%82%E4%BD%95%E5%9C%A8%20Linode%20%E7%94%A8%20Docker%20%E6%9E%B6%E8%A8%AD%20n8n/image-1-1024x557.jpg)
 
 * * *
 
@@ -332,7 +332,7 @@ Browser：https://n8n.stackpenguin.com (自己的網域)
 
 跳出 BasicAuth → Login → 看到 n8n UI ✅
 
-![](./-------2025-11-05-163916-1024x606.jpg)
+![](https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/%E5%A6%82%E4%BD%95%E5%9C%A8%20Linode%20%E7%94%A8%20Docker%20%E6%9E%B6%E8%A8%AD%20n8n/-------2025-11-05-163916-1024x606.jpg)
 
 ## Cloudflared 運作原理
 
