@@ -14,8 +14,7 @@
 		"new-post": "node scripts/new-post.js",
 		"auto-post": "node scripts/auto-cover-post.js",
 		"upload-images": "node scripts/migrate-images-to-r2.js",
-		"publish": "node scripts/publish.js",
-		"sync-db": "node scripts/sync-to-turso.js"
+		"publish": "node scripts/publish.js"
 	},
 	"dependencies": {
 		"@astrojs/check": "^0.9.9",
@@ -38,7 +37,6 @@
 		"@iconify-json/fa6-solid": "^1.2.4",
 		"@iconify-json/material-symbols": "^1.2.69",
 		"@iconify/svelte": "^5.2.1",
-		"@libsql/client": "^0.17.3",
 		"@swup/astro": "^1.8.0",
 		"@tailwindcss/typography": "^0.5.19",
 		"@tailwindcss/vite": "^4.2.4",
