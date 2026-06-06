@@ -16,7 +16,7 @@ draft: false
 
 ## 1. 安裝網路分析工具與初始化環境
 
-首先安裝 <mark>`bettercap`</mark>，進入該工具後，開啟本機網路探測功能，並檢查目前的網路介面狀態，確認 <mark>`wlan0`</mark> 網卡有支援監聽模式（<mark>Monitoring: true</mark>）。
+首先安裝 `bettercap`，進入該工具後，開啟本機網路探測功能，並檢查目前的網路介面狀態，確認 `wlan0` 網卡有支援監聽模式（<mark>Monitoring: true</mark>）。
 
 **操作指令與輸出內容：**
 
@@ -44,7 +44,7 @@ BetterCap > 127.0.0.1 » net.show
 
 ## 2. 掃描無線網路與鎖定目標
 
-接著，指定使用 <mark>`wlan0`</mark> 網卡啟動 Wi-Fi 偵測模組，列出周遭環境的無線存取點（AP）。在確認列表後，將目標鎖定為 <mark>SSID 為 `Maynard_Hotspot`</mark> 的設備。
+接著，指定使用 `wlan0` 網卡啟動 Wi-Fi 偵測模組，列出周遭環境的無線存取點（AP）。在確認列表後，將目標鎖定為 SSID 為 `Maynard_Hotspot` 的設備。
 
 **操作指令與輸出內容：**
 
@@ -79,7 +79,7 @@ BetterCap > 127.0.0.1 » exit
 
 ## 4. 安裝破解工具與進行離線密碼破解
 
-退出 bettercap 後，安裝了密碼破解工具 <mark>`hashcat`</mark>。在確認擷取到的封包檔（<mark>`maynard_hotspot.pcap`</mark>）存在於當前目錄後，直接使用 hashcat 對該檔案進行破解，並成功得出了 <mark>Wi-Fi 密碼</mark>。
+退出 bettercap 後，安裝了密碼破解工具 `hashcat`。在確認擷取到的封包檔（`maynard_hotspot.pcap`）存在於當前目錄後，直接使用 hashcat 對該檔案進行破解，並成功得出了 <mark>Wi-Fi 密碼</mark>。
 
 **操作指令與輸出內容：**
 
