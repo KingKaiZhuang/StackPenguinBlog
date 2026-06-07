@@ -2,7 +2,7 @@
 title: 台股市值超越印度，晉升世界第四！
 published: 2026-06-05
 description: "這部由謝金河主持的影片探討台灣股市與總體經濟的驚人成就，包括市值超越印度，以及產業結構的根本性轉變。"
-cover: "https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/%E5%8F%B0%E8%82%A1%E5%B8%82%E5%80%BC%E8%B6%85%E8%B6%8A%E5%8D%B0%E5%BA%A6%EF%BC%8C%E6%99%89%E5%8D%87%E4%B8%96%E7%95%8C%E7%AC%AC%E5%9B%9B%EF%BC%81/taiwan-stock-market-achievement.jpg"
+cover: "https://img.stackpenguin.com/images/%E5%8F%B0%E8%82%A1%E5%B8%82%E5%80%BC%E8%B6%85%E8%B6%8A%E5%8D%B0%E5%BA%A6%EF%BC%8C%E6%99%89%E5%8D%87%E4%B8%96%E7%95%8C%E7%AC%AC%E5%9B%9B%EF%BC%81/taiwan-stock-market-achievement.jpg"
 coverInContent: false
 tags:
   - 台股

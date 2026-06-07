@@ -2,7 +2,7 @@
 title: Line Bot 與 Chatgpt應用 01 - 建立帳號
 published: 2024-09-19
 description: "本文將指導您逐步建立 Line Bot 帳戶，並完成基本設定，幫助您快速上手。"
-cover: "https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/Line%20Bot%20%E8%88%87%20Chatgpt%E6%87%89%E7%94%A8%2001%20-%20%E5%BB%BA%E7%AB%8B%E5%B8%B3%E8%99%9F/create-account01.jpg"
+cover: "https://img.stackpenguin.com/images/Line%20Bot%20%E8%88%87%20Chatgpt%E6%87%89%E7%94%A8%2001%20-%20%E5%BB%BA%E7%AB%8B%E5%B8%B3%E8%99%9F/create-account01.jpg"
 coverInContent: false
 tags:
   - Line Bot
@@ -46,41 +46,41 @@ draft: false
 
 輸入一個你定義的 Provider 名稱。
 
-![create-account05](https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/Line%20Bot%20%E8%88%87%20Chatgpt%E6%87%89%E7%94%A8%2001%20-%20%E5%BB%BA%E7%AB%8B%E5%B8%B3%E8%99%9F/create-account5.jpg)
+![create-account05](https://img.stackpenguin.com/images/Line%20Bot%20%E8%88%87%20Chatgpt%E6%87%89%E7%94%A8%2001%20-%20%E5%BB%BA%E7%AB%8B%E5%B8%B3%E8%99%9F/create-account5.jpg)
 
 ## 6. 建立 Message API Channel
 
 選擇你剛剛建立的 Provider，接著在頁面中間位置找到並點擊 **Create a Message API channel**，以建立一個 Message API 機器人來管理訊息傳遞。
 
-![create-account06](https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/Line%20Bot%20%E8%88%87%20Chatgpt%E6%87%89%E7%94%A8%2001%20-%20%E5%BB%BA%E7%AB%8B%E5%B8%B3%E8%99%9F/create-account6.jpg)
+![create-account06](https://img.stackpenguin.com/images/Line%20Bot%20%E8%88%87%20Chatgpt%E6%87%89%E7%94%A8%2001%20-%20%E5%BB%BA%E7%AB%8B%E5%B8%B3%E8%99%9F/create-account6.jpg)
 
 ## 7. 建立 Line Official Account
 
 系統會引導你建立一個 **Line Official Account**，這是你的 Line Bot 與使用者互動所需的官方帳號，點擊 **Create a Line Official Account** 來開始。
 
-![create-account07](https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/Line%20Bot%20%E8%88%87%20Chatgpt%E6%87%89%E7%94%A8%2001%20-%20%E5%BB%BA%E7%AB%8B%E5%B8%B3%E8%99%9F/create-account7.jpg)
+![create-account07](https://img.stackpenguin.com/images/Line%20Bot%20%E8%88%87%20Chatgpt%E6%87%89%E7%94%A8%2001%20-%20%E5%BB%BA%E7%AB%8B%E5%B8%B3%E8%99%9F/create-account7.jpg)
 
 ## 8. 填寫帳號基本資訊
 
 系統會要求你填寫 Line Official Account 的基本資訊，如名稱、類別、國家等。根據實際需求進行填寫。
 
-![create-account08](https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/Line%20Bot%20%E8%88%87%20Chatgpt%E6%87%89%E7%94%A8%2001%20-%20%E5%BB%BA%E7%AB%8B%E5%B8%B3%E8%99%9F/create-account8.jpg)
+![create-account08](https://img.stackpenguin.com/images/Line%20Bot%20%E8%88%87%20Chatgpt%E6%87%89%E7%94%A8%2001%20-%20%E5%BB%BA%E7%AB%8B%E5%B8%B3%E8%99%9F/create-account8.jpg)
 
 ## 9. 確認並建立
 
 確認你所填寫的資訊無誤後，點擊 **確定** 以完成帳號建立。
 
-![create-account09](https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/Line%20Bot%20%E8%88%87%20Chatgpt%E6%87%89%E7%94%A8%2001%20-%20%E5%BB%BA%E7%AB%8B%E5%B8%B3%E8%99%9F/create-account9.jpg)
+![create-account09](https://img.stackpenguin.com/images/Line%20Bot%20%E8%88%87%20Chatgpt%E6%87%89%E7%94%A8%2001%20-%20%E5%BB%BA%E7%AB%8B%E5%B8%B3%E8%99%9F/create-account9.jpg)
 
 ## 10. 完成 Line Bot 設定
 
 建立完成後，系統會顯示一個確認訊息，代表你的 Line Bot 已成功建立。
 
-![create-account10](https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/Line%20Bot%20%E8%88%87%20Chatgpt%E6%87%89%E7%94%A8%2001%20-%20%E5%BB%BA%E7%AB%8B%E5%B8%B3%E8%99%9F/create-account10.jpg)
+![create-account10](https://img.stackpenguin.com/images/Line%20Bot%20%E8%88%87%20Chatgpt%E6%87%89%E7%94%A8%2001%20-%20%E5%BB%BA%E7%AB%8B%E5%B8%B3%E8%99%9F/create-account10.jpg)
 
 ## 11. 設定 Line Bot
 
 最後，你可以進入 Line Bot 的設定介面，進行 webhook URL 設定、回應訊息設定等。
 
-![create-account12](https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/Line%20Bot%20%E8%88%87%20Chatgpt%E6%87%89%E7%94%A8%2001%20-%20%E5%BB%BA%E7%AB%8B%E5%B8%B3%E8%99%9F/create-account11.jpg)
+![create-account12](https://img.stackpenguin.com/images/Line%20Bot%20%E8%88%87%20Chatgpt%E6%87%89%E7%94%A8%2001%20-%20%E5%BB%BA%E7%AB%8B%E5%B8%B3%E8%99%9F/create-account11.jpg)
 

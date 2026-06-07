@@ -2,7 +2,7 @@
 title: Streamlit 結合 yolo 辨識圖片
 published: 2025-12-01
 description: "這篇文章介紹如何利用 Streamlit 和 YOLO 模型進行圖片的物件偵測，包含建立專案環境、安裝相依套件及撰寫應用程式的詳細步驟。"
-cover: "https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/Streamlit%20%E7%B5%90%E5%90%88%20yolo%20%E8%BE%A8%E8%AD%98%E5%9C%96%E7%89%87/clean-shot-2025-12-01-at-16-05-16.jpg"
+cover: "https://img.stackpenguin.com/images/Streamlit%20%E7%B5%90%E5%90%88%20yolo%20%E8%BE%A8%E8%AD%98%E5%9C%96%E7%89%87/clean-shot-2025-12-01-at-16-05-16.jpg"
 coverInContent: false
 tags:
   - streamlit
@@ -264,9 +264,9 @@ if st.sidebar.button('偵測物件'):
 
 執行 streamlit run app.py
 
-![](https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/Streamlit%20%E7%B5%90%E5%90%88%20yolo%20%E8%BE%A8%E8%AD%98%E5%9C%96%E7%89%87/CleanShot-2025-12-01-at-16-05-16-1024x660.jpg)
+![](https://img.stackpenguin.com/images/Streamlit%20%E7%B5%90%E5%90%88%20yolo%20%E8%BE%A8%E8%AD%98%E5%9C%96%E7%89%87/CleanShot-2025-12-01-at-16-05-16-1024x660.jpg)
 
 上傳圖檔，按下偵測物件
 
-![](https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/Streamlit%20%E7%B5%90%E5%90%88%20yolo%20%E8%BE%A8%E8%AD%98%E5%9C%96%E7%89%87/CleanShot-2025-12-01-at-16-05-37-1024x660.jpg)
+![](https://img.stackpenguin.com/images/Streamlit%20%E7%B5%90%E5%90%88%20yolo%20%E8%BE%A8%E8%AD%98%E5%9C%96%E7%89%87/CleanShot-2025-12-01-at-16-05-37-1024x660.jpg)
 

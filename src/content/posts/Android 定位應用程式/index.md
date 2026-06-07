@@ -2,7 +2,7 @@
 title: Android 定位應用程式
 published: 2025-10-17
 description: "這是一個練習定位權限的App，涵蓋了如何使用 Google 的 Fused Location Provider API 並處理定位權限。"
-cover: "https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/Android%20%E5%AE%9A%E4%BD%8D%E6%87%89%E7%94%A8%E7%A8%8B%E5%BC%8F/image-1.jpg"
+cover: "https://img.stackpenguin.com/images/Android%20%E5%AE%9A%E4%BD%8D%E6%87%89%E7%94%A8%E7%A8%8B%E5%BC%8F/image-1.jpg"
 coverInContent: false
 tags:
   - location-app
@@ -578,11 +578,11 @@ if (rationaleRequired) {
 }
 ```kotlin
 
-![](https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/Android%20%E5%AE%9A%E4%BD%8D%E6%87%89%E7%94%A8%E7%A8%8B%E5%BC%8F/image-1-1.jpg)
+![](https://img.stackpenguin.com/images/Android%20%E5%AE%9A%E4%BD%8D%E6%87%89%E7%94%A8%E7%A8%8B%E5%BC%8F/image-1-1.jpg)
 
-![](https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/Android%20%E5%AE%9A%E4%BD%8D%E6%87%89%E7%94%A8%E7%A8%8B%E5%BC%8F/image.jpg)
+![](https://img.stackpenguin.com/images/Android%20%E5%AE%9A%E4%BD%8D%E6%87%89%E7%94%A8%E7%A8%8B%E5%BC%8F/image.jpg)
 
-![](https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/Android%20%E5%AE%9A%E4%BD%8D%E6%87%89%E7%94%A8%E7%A8%8B%E5%BC%8F/-------2025-10-19-214356.jpg)
+![](https://img.stackpenguin.com/images/Android%20%E5%AE%9A%E4%BD%8D%E6%87%89%E7%94%A8%E7%A8%8B%E5%BC%8F/-------2025-10-19-214356.jpg)
 
 ## LocationViewModel.kt
 

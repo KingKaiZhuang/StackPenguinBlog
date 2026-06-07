@@ -2,7 +2,7 @@
 title: UVA 10041 - Vito's Family
 published: 2024-09-16
 description: "Vito 想要找到一個最佳的住址以最小化家族成員之間的總距離，透過找出中位數來實現此目標。"
-cover: "https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/UVA%2010041%20-%20Vito's%20Family/vitos-family.jpg"
+cover: "https://img.stackpenguin.com/images/UVA%2010041%20-%20Vito's%20Family/vitos-family.jpg"
 coverInContent: false
 tags:
   - CPE

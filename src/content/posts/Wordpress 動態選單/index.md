@@ -2,7 +2,7 @@
 title: Wordpress 動態選單
 published: 2024-09-26
 description: "這篇文章將詳細介紹如何在 WordPress 中動態生成選單，包括如何連結對應選單、組織選單層次結構以及生成 HTML 選單的步驟。"
-cover: "https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/Wordpress%20%E5%8B%95%E6%85%8B%E9%81%B8%E5%96%AE/wordpress-background.jpg"
+cover: "https://img.stackpenguin.com/images/Wordpress%20%E5%8B%95%E6%85%8B%E9%81%B8%E5%96%AE/wordpress-background.jpg"
 coverInContent: false
 tags:
   - Wordpress

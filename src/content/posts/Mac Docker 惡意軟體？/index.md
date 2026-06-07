@@ -2,7 +2,7 @@
 title: Mac Docker 惡意軟體？
 published: 2025-04-04
 description: "探討 macOS 將 Docker 誤判為惡意軟體的問題，並提供修復步驟。"
-cover: "https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/Mac%20Docker%20%E6%83%A1%E6%84%8F%E8%BB%9F%E9%AB%94%EF%BC%9F/mac-docker-malware.jpg"
+cover: "https://img.stackpenguin.com/images/Mac%20Docker%20%E6%83%A1%E6%84%8F%E8%BB%9F%E9%AB%94%EF%BC%9F/mac-docker-malware.jpg"
 coverInContent: false
 tags:
   - Docker

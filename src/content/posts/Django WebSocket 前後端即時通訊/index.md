@@ -2,7 +2,7 @@
 title: Django WebSocket 前後端即時通訊
 published: 2024-10-24
 description: "本篇文章詳細介紹了如何使用 Django channels 和 Redis 實現 WebSocket 的前後端即時通訊功能，涵蓋了安裝、設定、路由設定及如何運行專案步驟。"
-cover: "https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/Django%20WebSocket%20%E5%89%8D%E5%BE%8C%E7%AB%AF%E5%8D%B3%E6%99%82%E9%80%9A%E8%A8%8A/django-websocket-communication-png.jpg"
+cover: "https://img.stackpenguin.com/images/Django%20WebSocket%20%E5%89%8D%E5%BE%8C%E7%AB%AF%E5%8D%B3%E6%99%82%E9%80%9A%E8%A8%8A/django-websocket-communication-png.jpg"
 coverInContent: false
 tags:
   - Python

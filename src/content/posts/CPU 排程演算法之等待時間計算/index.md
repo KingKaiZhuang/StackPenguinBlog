@@ -2,7 +2,7 @@
 title: CPU 排程演算法之等待時間計算
 published: 2025-10-21
 description: "這篇文章分析不同的 CPU 排程算法，包括 FCFS、SJF、SRTF、RR 和 Priority，並計算每個算法的平均等待時間。"
-cover: "https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/CPU%20%E6%8E%92%E7%A8%8B%E6%BC%94%E7%AE%97%E6%B3%95%E4%B9%8B%E7%AD%89%E5%BE%85%E6%99%82%E9%96%93%E8%A8%88%E7%AE%97/cpu-scheduling-algorithms.jpg"
+cover: "https://img.stackpenguin.com/images/CPU%20%E6%8E%92%E7%A8%8B%E6%BC%94%E7%AE%97%E6%B3%95%E4%B9%8B%E7%AD%89%E5%BE%85%E6%99%82%E9%96%93%E8%A8%88%E7%AE%97/cpu-scheduling-algorithms.jpg"
 coverInContent: false
 tags:
   - CPU排程
@@ -39,7 +39,7 @@ draft: false
 
 ## 一、FCFS
 
-![](https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/CPU%20%E6%8E%92%E7%A8%8B%E6%BC%94%E7%AE%97%E6%B3%95%E4%B9%8B%E7%AD%89%E5%BE%85%E6%99%82%E9%96%93%E8%A8%88%E7%AE%97/image-3-1024x604.jpg)
+![](https://img.stackpenguin.com/images/CPU%20%E6%8E%92%E7%A8%8B%E6%BC%94%E7%AE%97%E6%B3%95%E4%B9%8B%E7%AD%89%E5%BE%85%E6%99%82%E9%96%93%E8%A8%88%E7%AE%97/image-3-1024x604.jpg)
 
 計算等待時間：
 
@@ -58,7 +58,7 @@ draft: false
 
 ## 二、SJF
 
-![](https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/CPU%20%E6%8E%92%E7%A8%8B%E6%BC%94%E7%AE%97%E6%B3%95%E4%B9%8B%E7%AD%89%E5%BE%85%E6%99%82%E9%96%93%E8%A8%88%E7%AE%97/image-4-1024x604.jpg)
+![](https://img.stackpenguin.com/images/CPU%20%E6%8E%92%E7%A8%8B%E6%BC%94%E7%AE%97%E6%B3%95%E4%B9%8B%E7%AD%89%E5%BE%85%E6%99%82%E9%96%93%E8%A8%88%E7%AE%97/image-4-1024x604.jpg)
 
 計算等待時間：
 
@@ -77,7 +77,7 @@ draft: false
 
 ## 三、SRTF
 
-![](https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/CPU%20%E6%8E%92%E7%A8%8B%E6%BC%94%E7%AE%97%E6%B3%95%E4%B9%8B%E7%AD%89%E5%BE%85%E6%99%82%E9%96%93%E8%A8%88%E7%AE%97/image-5-1024x669.jpg)
+![](https://img.stackpenguin.com/images/CPU%20%E6%8E%92%E7%A8%8B%E6%BC%94%E7%AE%97%E6%B3%95%E4%B9%8B%E7%AD%89%E5%BE%85%E6%99%82%E9%96%93%E8%A8%88%E7%AE%97/image-5-1024x669.jpg)
 
 P1 : 8 -> 7 -> 0
 
@@ -104,7 +104,7 @@ P4 : 5 -> 0
 
 ## 四、RR（時間片 q = 4）
 
-![](https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/CPU%20%E6%8E%92%E7%A8%8B%E6%BC%94%E7%AE%97%E6%B3%95%E4%B9%8B%E7%AD%89%E5%BE%85%E6%99%82%E9%96%93%E8%A8%88%E7%AE%97/image-6-1024x604.jpg)
+![](https://img.stackpenguin.com/images/CPU%20%E6%8E%92%E7%A8%8B%E6%BC%94%E7%AE%97%E6%B3%95%E4%B9%8B%E7%AD%89%E5%BE%85%E6%99%82%E9%96%93%E8%A8%88%E7%AE%97/image-6-1024x604.jpg)
 
 P1 : 8 -> 4 -> 0
 
@@ -135,7 +135,7 @@ P4 : 5 -> 1 -> 0
 
 ### (1) 非搶先 Priority
 
-![](https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/CPU%20%E6%8E%92%E7%A8%8B%E6%BC%94%E7%AE%97%E6%B3%95%E4%B9%8B%E7%AD%89%E5%BE%85%E6%99%82%E9%96%93%E8%A8%88%E7%AE%97/image-8-1024x604.jpg)
+![](https://img.stackpenguin.com/images/CPU%20%E6%8E%92%E7%A8%8B%E6%BC%94%E7%AE%97%E6%B3%95%E4%B9%8B%E7%AD%89%E5%BE%85%E6%99%82%E9%96%93%E8%A8%88%E7%AE%97/image-8-1024x604.jpg)
 
 行程執行順序：P1 → P2 → P4 → P3
 
@@ -156,7 +156,7 @@ P4 : 5 -> 1 -> 0
 
 ### (2) 可搶先 Priority
 
-![](https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/CPU%20%E6%8E%92%E7%A8%8B%E6%BC%94%E7%AE%97%E6%B3%95%E4%B9%8B%E7%AD%89%E5%BE%85%E6%99%82%E9%96%93%E8%A8%88%E7%AE%97/image-9-1024x604.jpg)
+![](https://img.stackpenguin.com/images/CPU%20%E6%8E%92%E7%A8%8B%E6%BC%94%E7%AE%97%E6%B3%95%E4%B9%8B%E7%AD%89%E5%BE%85%E6%99%82%E9%96%93%E8%A8%88%E7%AE%97/image-9-1024x604.jpg)
 
 P1 : 8 -> 7 -> 0
 

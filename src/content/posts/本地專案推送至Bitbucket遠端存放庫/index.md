@@ -2,7 +2,7 @@
 title: 本地專案推送至Bitbucket遠端存放庫
 published: 2024-09-22
 description: "本文介紹了如何將本地的 Git 專案推送到 Bitbucket，包括每個步驟執行指令後的顯示內容。"
-cover: "https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/%E6%9C%AC%E5%9C%B0%E5%B0%88%E6%A1%88%E6%8E%A8%E9%80%81%E8%87%B3Bitbucket%E9%81%A0%E7%AB%AF%E5%AD%98%E6%94%BE%E5%BA%AB/bitbucket-push-guide.jpg"
+cover: "https://img.stackpenguin.com/images/%E6%9C%AC%E5%9C%B0%E5%B0%88%E6%A1%88%E6%8E%A8%E9%80%81%E8%87%B3Bitbucket%E9%81%A0%E7%AB%AF%E5%AD%98%E6%94%BE%E5%BA%AB/bitbucket-push-guide.jpg"
 coverInContent: false
 tags:
   - Bitbucket

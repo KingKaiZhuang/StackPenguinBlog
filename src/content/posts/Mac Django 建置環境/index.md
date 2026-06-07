@@ -2,7 +2,7 @@
 title: Mac Django 建置環境
 published: 2024-10-01
 description: "本指南提供在 macOS 上安裝和配置 Django 的步驟，並解決可能出現的常見錯誤。"
-cover: "https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/Mac%20Django%20%E5%BB%BA%E7%BD%AE%E7%92%B0%E5%A2%83/mac-django-environment-setup-png.jpg"
+cover: "https://img.stackpenguin.com/images/Mac%20Django%20%E5%BB%BA%E7%BD%AE%E7%92%B0%E5%A2%83/mac-django-environment-setup-png.jpg"
 coverInContent: false
 tags:
   - Python

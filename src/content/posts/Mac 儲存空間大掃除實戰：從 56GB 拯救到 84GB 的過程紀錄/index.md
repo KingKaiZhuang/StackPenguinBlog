@@ -2,7 +2,7 @@
 title: Mac 儲存空間大掃除實戰：從 56GB 拯救到 84GB 的過程紀錄
 published: 2026-06-04
 description: "這篇筆記紀錄了一次幫 Mac 進行深度儲存空間清理的過程，成功將可用空間從 56 GB 提升至近 85 GB！"
-cover: "https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/Mac%20%E5%84%B2%E5%AD%98%E7%A9%BA%E9%96%93%E5%A4%A7%E6%8E%83%E9%99%A4%E5%AF%A6%E6%88%B0%EF%BC%9A%E5%BE%9E%2056GB%20%E6%8B%AF%E6%95%91%E5%88%B0%2084GB%20%E7%9A%84%E9%81%8E%E7%A8%8B%E7%B4%80%E9%8C%84/mac-storage-cleanup.jpg"
+cover: "https://img.stackpenguin.com/images/Mac%20%E5%84%B2%E5%AD%98%E7%A9%BA%E9%96%93%E5%A4%A7%E6%8E%83%E9%99%A4%E5%AF%A6%E6%88%B0%EF%BC%9A%E5%BE%9E%2056GB%20%E6%8B%AF%E6%95%91%E5%88%B0%2084GB%20%E7%9A%84%E9%81%8E%E7%A8%8B%E7%B4%80%E9%8C%84/mac-storage-cleanup.jpg"
 coverInContent: false
 tags:
   - macOS

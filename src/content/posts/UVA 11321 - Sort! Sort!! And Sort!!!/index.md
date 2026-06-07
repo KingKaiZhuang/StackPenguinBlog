@@ -2,7 +2,7 @@
 title: UVA 11321 - Sort! Sort!! And Sort!!!
 published: 2026-02-12
 description: "本篇文章介紹了 UVA 11321 題目的解題思路，詳細解析了如何按照特定規則對一系列整數進行排序，並提供了 Python 解題程式碼。"
-cover: "https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/UVA%2011321%20-%20Sort!%20Sort!!%20And%20Sort!!!/sorting-algorithm.jpg"
+cover: "https://img.stackpenguin.com/images/UVA%2011321%20-%20Sort!%20Sort!!%20And%20Sort!!!/sorting-algorithm.jpg"
 coverInContent: false
 tags:
   - CPE

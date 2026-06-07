@@ -2,7 +2,7 @@
 title: WordPress 網站利用 Cron + Rclone 自動同步檔案到 Google Drive 完整教學
 published: 2025-11-14
 description: "本篇文章詳細介紹如何在 Ubuntu 上使用 Rclone 工具搭配 Cron 排程自動備份 WordPress 網站的資料庫與檔案至 Google Drive，包括安裝、設定、撰寫腳本及設定排程等。"
-cover: "https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/WordPress%20%E7%B6%B2%E7%AB%99%E5%88%A9%E7%94%A8%20Cron%20%2B%20Rclone%20%E8%87%AA%E5%8B%95%E5%90%8C%E6%AD%A5%E6%AA%94%E6%A1%88%E5%88%B0%20Google%20Drive%20%E5%AE%8C%E6%95%B4%E6%95%99%E5%AD%B8/cleanshot-2025-11-14-at-18-10-07.jpg"
+cover: "https://img.stackpenguin.com/images/WordPress%20%E7%B6%B2%E7%AB%99%E5%88%A9%E7%94%A8%20Cron%20%2B%20Rclone%20%E8%87%AA%E5%8B%95%E5%90%8C%E6%AD%A5%E6%AA%94%E6%A1%88%E5%88%B0%20Google%20Drive%20%E5%AE%8C%E6%95%B4%E6%95%99%E5%AD%B8/cleanshot-2025-11-14-at-18-10-07.jpg"
 coverInContent: false
 tags:
   - wordpress-備份
@@ -242,7 +242,7 @@ rclone authorize "drive" "<授權碼>"
 rclone authorize "drive" "<授權碼>"
 ```
 
-![](https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/WordPress%20%E7%B6%B2%E7%AB%99%E5%88%A9%E7%94%A8%20Cron%20%2B%20Rclone%20%E8%87%AA%E5%8B%95%E5%90%8C%E6%AD%A5%E6%AA%94%E6%A1%88%E5%88%B0%20Google%20Drive%20%E5%AE%8C%E6%95%B4%E6%95%99%E5%AD%B8/image-2-1024x510.jpg)
+![](https://img.stackpenguin.com/images/WordPress%20%E7%B6%B2%E7%AB%99%E5%88%A9%E7%94%A8%20Cron%20%2B%20Rclone%20%E8%87%AA%E5%8B%95%E5%90%8C%E6%AD%A5%E6%AA%94%E6%A1%88%E5%88%B0%20Google%20Drive%20%E5%AE%8C%E6%95%B4%E6%95%99%E5%AD%B8/image-2-1024x510.jpg)
 
 這一步代表：你透過另一台有網頁瀏覽器的機器完成 Google OAuth 登入，再把結果回傳到伺服器。
 
@@ -277,7 +277,7 @@ rclone ls gdrive:
 
 重點是要加冒號。執行後，你看到 Google Drive 裡全部的檔案列表。代表 gdrive remote 設定成功。
 
-![](https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/WordPress%20%E7%B6%B2%E7%AB%99%E5%88%A9%E7%94%A8%20Cron%20%2B%20Rclone%20%E8%87%AA%E5%8B%95%E5%90%8C%E6%AD%A5%E6%AA%94%E6%A1%88%E5%88%B0%20Google%20Drive%20%E5%AE%8C%E6%95%B4%E6%95%99%E5%AD%B8/image-3-1024x526.jpg)
+![](https://img.stackpenguin.com/images/WordPress%20%E7%B6%B2%E7%AB%99%E5%88%A9%E7%94%A8%20Cron%20%2B%20Rclone%20%E8%87%AA%E5%8B%95%E5%90%8C%E6%AD%A5%E6%AA%94%E6%A1%88%E5%88%B0%20Google%20Drive%20%E5%AE%8C%E6%95%B4%E6%95%99%E5%AD%B8/image-3-1024x526.jpg)
 
 ## 接著是 Shell Script 與 cron 排程設定
 
@@ -703,13 +703,13 @@ sudo /root/backup/scripts/backup-uploads.sh
 
 備份檔案將會出現在 Google Drive：
 
-![](https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/WordPress%20%E7%B6%B2%E7%AB%99%E5%88%A9%E7%94%A8%20Cron%20%2B%20Rclone%20%E8%87%AA%E5%8B%95%E5%90%8C%E6%AD%A5%E6%AA%94%E6%A1%88%E5%88%B0%20Google%20Drive%20%E5%AE%8C%E6%95%B4%E6%95%99%E5%AD%B8/CleanShot-2025-11-14-at-18-10-07-2x-1024x482.jpg)
+![](https://img.stackpenguin.com/images/WordPress%20%E7%B6%B2%E7%AB%99%E5%88%A9%E7%94%A8%20Cron%20%2B%20Rclone%20%E8%87%AA%E5%8B%95%E5%90%8C%E6%AD%A5%E6%AA%94%E6%A1%88%E5%88%B0%20Google%20Drive%20%E5%AE%8C%E6%95%B4%E6%95%99%E5%AD%B8/CleanShot-2025-11-14-at-18-10-07-2x-1024x482.jpg)
 
-![](https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/WordPress%20%E7%B6%B2%E7%AB%99%E5%88%A9%E7%94%A8%20Cron%20%2B%20Rclone%20%E8%87%AA%E5%8B%95%E5%90%8C%E6%AD%A5%E6%AA%94%E6%A1%88%E5%88%B0%20Google%20Drive%20%E5%AE%8C%E6%95%B4%E6%95%99%E5%AD%B8/CleanShot-2025-11-15-at-15-00-18-1024x611.jpg)
+![](https://img.stackpenguin.com/images/WordPress%20%E7%B6%B2%E7%AB%99%E5%88%A9%E7%94%A8%20Cron%20%2B%20Rclone%20%E8%87%AA%E5%8B%95%E5%90%8C%E6%AD%A5%E6%AA%94%E6%A1%88%E5%88%B0%20Google%20Drive%20%E5%AE%8C%E6%95%B4%E6%95%99%E5%AD%B8/CleanShot-2025-11-15-at-15-00-18-1024x611.jpg)
 
-![](https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/WordPress%20%E7%B6%B2%E7%AB%99%E5%88%A9%E7%94%A8%20Cron%20%2B%20Rclone%20%E8%87%AA%E5%8B%95%E5%90%8C%E6%AD%A5%E6%AA%94%E6%A1%88%E5%88%B0%20Google%20Drive%20%E5%AE%8C%E6%95%B4%E6%95%99%E5%AD%B8/CleanShot-2025-11-15-at-15-00-44-1024x611.jpg)
+![](https://img.stackpenguin.com/images/WordPress%20%E7%B6%B2%E7%AB%99%E5%88%A9%E7%94%A8%20Cron%20%2B%20Rclone%20%E8%87%AA%E5%8B%95%E5%90%8C%E6%AD%A5%E6%AA%94%E6%A1%88%E5%88%B0%20Google%20Drive%20%E5%AE%8C%E6%95%B4%E6%95%99%E5%AD%B8/CleanShot-2025-11-15-at-15-00-44-1024x611.jpg)
 
-![](https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/WordPress%20%E7%B6%B2%E7%AB%99%E5%88%A9%E7%94%A8%20Cron%20%2B%20Rclone%20%E8%87%AA%E5%8B%95%E5%90%8C%E6%AD%A5%E6%AA%94%E6%A1%88%E5%88%B0%20Google%20Drive%20%E5%AE%8C%E6%95%B4%E6%95%99%E5%AD%B8/CleanShot-2025-11-15-at-15-01-04-1024x611.jpg)
+![](https://img.stackpenguin.com/images/WordPress%20%E7%B6%B2%E7%AB%99%E5%88%A9%E7%94%A8%20Cron%20%2B%20Rclone%20%E8%87%AA%E5%8B%95%E5%90%8C%E6%AD%A5%E6%AA%94%E6%A1%88%E5%88%B0%20Google%20Drive%20%E5%AE%8C%E6%95%B4%E6%95%99%E5%AD%B8/CleanShot-2025-11-15-at-15-01-04-1024x611.jpg)
 
 ## 注意事項
 

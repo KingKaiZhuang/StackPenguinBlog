@@ -2,7 +2,7 @@
 title: Yolov9 實作練習
 published: 2025-10-26
 description: "本文介紹如何使用 YOLOv9 進行物件檢測的實作，包括建立虛擬環境、安裝必要套件和訓練模型的步驟。"
-cover: "https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/Yolov9%20%E5%AF%A6%E4%BD%9C%E7%B7%B4%E7%BF%92/yolov9-tutorial-image.jpg"
+cover: "https://img.stackpenguin.com/images/Yolov9%20%E5%AF%A6%E4%BD%9C%E7%B7%B4%E7%BF%92/yolov9-tutorial-image.jpg"
 coverInContent: false
 tags:
   - YOLOv9
@@ -16,7 +16,7 @@ draft: false
 
 內容全參考影片 : [https://www.youtube.com/watch?v=tMwyxKttZd0&t=60s](https://www.youtube.com/watch?v=tMwyxKttZd0&t=60s)
 
-![](https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/Yolov9%20%E5%AF%A6%E4%BD%9C%E7%B7%B4%E7%BF%92/image-10.jpg)
+![](https://img.stackpenguin.com/images/Yolov9%20%E5%AF%A6%E4%BD%9C%E7%B7%B4%E7%BF%92/image-10.jpg)
 
 首先建立一個Conda的虛擬環境，之後進入後先下載labelImg。
 
@@ -30,7 +30,7 @@ draft: false
 
 如果labelImg閃退，建議不用進到虛擬環境，直接去下載[LabelImg](https://github.com/HumanSignal/labelImg/releases)。
 
-![](https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/Yolov9%20%E5%AF%A6%E4%BD%9C%E7%B7%B4%E7%BF%92/image-11-1024x594.jpg)
+![](https://img.stackpenguin.com/images/Yolov9%20%E5%AF%A6%E4%BD%9C%E7%B7%B4%E7%BF%92/image-11-1024x594.jpg)
 
 建立一個dataset資料夾
 
@@ -60,25 +60,25 @@ dataset
 
 8:1:1
 
-![](https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/Yolov9%20%E5%AF%A6%E4%BD%9C%E7%B7%B4%E7%BF%92/image-12-1024x594.jpg)
+![](https://img.stackpenguin.com/images/Yolov9%20%E5%AF%A6%E4%BD%9C%E7%B7%B4%E7%BF%92/image-12-1024x594.jpg)
 
 點擊Open Dir打開訓練集的圖片資料夾。
 
-![](https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/Yolov9%20%E5%AF%A6%E4%BD%9C%E7%B7%B4%E7%BF%92/image-26.jpg)
+![](https://img.stackpenguin.com/images/Yolov9%20%E5%AF%A6%E4%BD%9C%E7%B7%B4%E7%BF%92/image-26.jpg)
 
-![](https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/Yolov9%20%E5%AF%A6%E4%BD%9C%E7%B7%B4%E7%BF%92/image-14-1024x594.jpg)
+![](https://img.stackpenguin.com/images/Yolov9%20%E5%AF%A6%E4%BD%9C%E7%B7%B4%E7%BF%92/image-14-1024x594.jpg)
 
 接著要選擇剛剛資料夾中的Label資料夾
 
-![](https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/Yolov9%20%E5%AF%A6%E4%BD%9C%E7%B7%B4%E7%BF%92/image-25.jpg)
+![](https://img.stackpenguin.com/images/Yolov9%20%E5%AF%A6%E4%BD%9C%E7%B7%B4%E7%BF%92/image-25.jpg)
 
-![](https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/Yolov9%20%E5%AF%A6%E4%BD%9C%E7%B7%B4%E7%BF%92/image-16-1024x594.jpg)
+![](https://img.stackpenguin.com/images/Yolov9%20%E5%AF%A6%E4%BD%9C%E7%B7%B4%E7%BF%92/image-16-1024x594.jpg)
 
-![](https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/Yolov9%20%E5%AF%A6%E4%BD%9C%E7%B7%B4%E7%BF%92/image-17-1024x593.jpg)
+![](https://img.stackpenguin.com/images/Yolov9%20%E5%AF%A6%E4%BD%9C%E7%B7%B4%E7%BF%92/image-17-1024x593.jpg)
 
 要改成YOLO的格式，就可以開始框了
 
-![](https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/Yolov9%20%E5%AF%A6%E4%BD%9C%E7%B7%B4%E7%BF%92/image-18-1024x542.jpg)
+![](https://img.stackpenguin.com/images/Yolov9%20%E5%AF%A6%E4%BD%9C%E7%B7%B4%E7%BF%92/image-18-1024x542.jpg)
 
 建議開啟這兩個。
 
@@ -96,17 +96,17 @@ dataset
 
 接著安裝相關套件，然後進入到PyTorch依據自己的版本下載。
 
-![](https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/Yolov9%20%E5%AF%A6%E4%BD%9C%E7%B7%B4%E7%BF%92/image-21-1024x459.jpg)
+![](https://img.stackpenguin.com/images/Yolov9%20%E5%AF%A6%E4%BD%9C%E7%B7%B4%E7%BF%92/image-21-1024x459.jpg)
 
-![](https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/Yolov9%20%E5%AF%A6%E4%BD%9C%E7%B7%B4%E7%BF%92/image-19.jpg)
+![](https://img.stackpenguin.com/images/Yolov9%20%E5%AF%A6%E4%BD%9C%E7%B7%B4%E7%BF%92/image-19.jpg)
 
 安裝的過程我們可以先將dataset搬到data底下。
 
-![](https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/Yolov9%20%E5%AF%A6%E4%BD%9C%E7%B7%B4%E7%BF%92/image-20-1024x664.jpg)
+![](https://img.stackpenguin.com/images/Yolov9%20%E5%AF%A6%E4%BD%9C%E7%B7%B4%E7%BF%92/image-20-1024x664.jpg)
 
 接著更改coco.yaml這支檔案我將它改名為datasets.yaml。
 
-![](https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/Yolov9%20%E5%AF%A6%E4%BD%9C%E7%B7%B4%E7%BF%92/image-22-1024x554.jpg)
+![](https://img.stackpenguin.com/images/Yolov9%20%E5%AF%A6%E4%BD%9C%E7%B7%B4%E7%BF%92/image-22-1024x554.jpg)
 
 ### train.py 參數解析：
 
@@ -151,7 +151,7 @@ dataset
 
 調整完後就可以開始訓練。
 
-![](https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/Yolov9%20%E5%AF%A6%E4%BD%9C%E7%B7%B4%E7%BF%92/image-23-1024x448.jpg)
+![](https://img.stackpenguin.com/images/Yolov9%20%E5%AF%A6%E4%BD%9C%E7%B7%B4%E7%BF%92/image-23-1024x448.jpg)
 
 ## 二、驗證指令 val.py
 
@@ -165,7 +165,7 @@ dataset
 
 跑完後你會在runs\\val\\exp2看到驗證後的圖像。
 
-![](https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/Yolov9%20%E5%AF%A6%E4%BD%9C%E7%B7%B4%E7%BF%92/image-24-1024x604.jpg)
+![](https://img.stackpenguin.com/images/Yolov9%20%E5%AF%A6%E4%BD%9C%E7%B7%B4%E7%BF%92/image-24-1024x604.jpg)
 
 ## YOLOv9 訓練相關問題
 

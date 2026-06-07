@@ -2,7 +2,7 @@
 title: 訓練分類器
 published: 2025-10-29
 description: "這篇文章介紹如何使用 PyTorch 訓練一個卷積神經網路來分類 CIFAR-10 資料集的圖片，包括資料載入、模型建立、訓練過程及測試評估等步驟。"
-cover: "https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/%E8%A8%93%E7%B7%B4%E5%88%86%E9%A1%9E%E5%99%A8/image-classifier-example.jpg"
+cover: "https://img.stackpenguin.com/images/%E8%A8%93%E7%B7%B4%E5%88%86%E9%A1%9E%E5%99%A8/image-classifier-example.jpg"
 coverInContent: false
 tags:
   - AI
@@ -134,7 +134,7 @@ print(' '.join(f'{classes[labels[j]]:5s}' for j in range(batch_size)))
 
 在顯示影像之前，程式會先從訓練資料中取出一批圖片。這裡 `dataiter = iter(trainloader)` 建立一個可迭代物件，用來從資料載入器中取得資料，而 `images, labels = next(dataiter)` 則是取出下一批資料。這一批資料包含了四張圖片（因為之前設定 `batch_size = 4`），以及這四張圖片的標籤。
 
-![](https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/%E8%A8%93%E7%B7%B4%E5%88%86%E9%A1%9E%E5%99%A8/image-27.jpg)
+![](https://img.stackpenguin.com/images/%E8%A8%93%E7%B7%B4%E5%88%86%E9%A1%9E%E5%99%A8/image-27.jpg)
 
 接著使用 `torchvision.utils.make_grid(images)` 將多張圖片排成一張網格，方便一次顯示多張影像。這個網格會被傳入 `imshow()` 函式中顯示出來。最後一行 `print(' '.join(f'{classes[labels[j]]:5s}' for j in range(batch_size)))` 則是依序把每張圖片的類別名稱印出來。它會根據 `labels` 取得每張圖片的類別代號，再利用 `classes` 對應到實際的名稱（例如 "cat"、"dog"、"car" 等），並用空格分隔後印在同一行。
 
@@ -206,7 +206,7 @@ net = Net()
 
 ### 補充 : ReLU 的作用
 
-![](https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/%E8%A8%93%E7%B7%B4%E5%88%86%E9%A1%9E%E5%99%A8/image-28.jpg)
+![](https://img.stackpenguin.com/images/%E8%A8%93%E7%B7%B4%E5%88%86%E9%A1%9E%E5%99%A8/image-28.jpg)
 
 它會**把所有負值剪掉，正值保留**。
 
@@ -336,7 +336,7 @@ print('GroundTruth: ', ' '.join(f'{classes[labels[j]]:5s}' for j in range(4)))
 
 接下來的 `imshow(torchvision.utils.make_grid(images))` 是用來顯示圖片。由於這次取出的 `images` 是四張影像，因此使用 `torchvision.utils.make_grid(images)` 先把這四張圖排成一張大圖（grid），再交給 `imshow()` 函式顯示出來。`imshow()` 會先將影像資料反正規化（把像素值從 -1~1 的範圍還原為 0~1），然後利用 Matplotlib 將這張圖片網格畫出來。執行這行後，畫面上會出現四張並排的小圖片，也就是接下來模型要進行預測的測試樣本。
 
-![](https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/%E8%A8%93%E7%B7%B4%E5%88%86%E9%A1%9E%E5%99%A8/CleanShot-2025-10-29-at-11-41-16-2x-1024x385.jpg)
+![](https://img.stackpenguin.com/images/%E8%A8%93%E7%B7%B4%E5%88%86%E9%A1%9E%E5%99%A8/CleanShot-2025-10-29-at-11-41-16-2x-1024x385.jpg)
 
 最後一行 `print('GroundTruth: ', ' '.join(f'{classes[labels[j]]:5s}' for j in range(4)))` 則負責印出這四張圖片的真實類別名稱。這裡的 `classes` 是先前定義好的 CIFAR-10 類別名稱列表，例如 `('plane', 'car', 'bird', 'cat', 'deer', 'dog', 'frog', 'horse', 'ship', 'truck')`。`labels[j]` 會取出每張圖片的數字標籤，而 `classes[labels[j]]` 則將這些數字轉換為對應的文字名稱。`' '.join(...)` 用來把所有類別名稱以空格串起來，讓輸出更整齊。
 
@@ -404,7 +404,7 @@ print('Predicted: ', ' '.join(f'{classes[predicted[j]]:5s}'
 對於每張圖片（每一列），模型會輸出 10 個數值，這些數值代表「模型認為該圖片屬於每個類別的信心分數」。  
 `torch.max(outputs, 1)` 的第二個參數 `1` 表示沿著「第 1 維」進行操作，也就是在每一列（每張圖片的 10 個分數）中尋找最大值。
 
-![](https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/%E8%A8%93%E7%B7%B4%E5%88%86%E9%A1%9E%E5%99%A8/CleanShot-2025-10-29-at-11-47-42-2x-1024x85.jpg)
+![](https://img.stackpenguin.com/images/%E8%A8%93%E7%B7%B4%E5%88%86%E9%A1%9E%E5%99%A8/CleanShot-2025-10-29-at-11-47-42-2x-1024x85.jpg)
 
 這個函式會回傳兩個結果：
 
@@ -458,11 +458,11 @@ print(f'Accuracy of the network on the 10000 test images: {100 * correct // tota
 
 當迴圈跑完所有測試資料後，模型就已經對整個測試集（共 10,000 張圖片）完成預測。
 
-![](https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/%E8%A8%93%E7%B7%B4%E5%88%86%E9%A1%9E%E5%99%A8/CleanShot-2025-10-29-at-11-57-50-2x-1024x45.jpg)
+![](https://img.stackpenguin.com/images/%E8%A8%93%E7%B7%B4%E5%88%86%E9%A1%9E%E5%99%A8/CleanShot-2025-10-29-at-11-57-50-2x-1024x45.jpg)
 
 代表模型在 10,000 張測試圖片中，有 53% 被正確分類。
 
-![](https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/%E8%A8%93%E7%B7%B4%E5%88%86%E9%A1%9E%E5%99%A8/CleanShot-2025-10-29-at-11-59-02-2x-1024x84.jpg)
+![](https://img.stackpenguin.com/images/%E8%A8%93%E7%B7%B4%E5%88%86%E9%A1%9E%E5%99%A8/CleanShot-2025-10-29-at-11-59-02-2x-1024x84.jpg)
 
   
 這裡的 `100 * correct // total` 使用整數除法，讓結果以百分比的形式輸出。

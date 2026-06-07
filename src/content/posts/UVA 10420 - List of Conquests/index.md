@@ -2,7 +2,7 @@
 title: UVA 10420 - List of Conquests
 published: 2024-09-17
 description: "這篇文章介紹了如何統計來自不同國家的名字出現次數，通過 C++ 程式碼示範解題思路。"
-cover: "https://pub-a50030fee9b441a489c4fba183ba46d0.r2.dev/images/UVA%2010420%20-%20List%20of%20Conquests/uva-10420-list-of-conquests.jpg"
+cover: "https://img.stackpenguin.com/images/UVA%2010420%20-%20List%20of%20Conquests/uva-10420-list-of-conquests.jpg"
 coverInContent: false
 tags:
   - CPE
