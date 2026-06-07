@@ -67,12 +67,12 @@ async function uploadToR2(localPath, r2Key) {
 
 async function main() {
     console.log("🚀 開始掃描 Markdown 並上傳圖片至 Cloudflare R2...");
-    
+
     // Normalize PUBLIC_DOMAIN to ensure no trailing slash
     const domain = PUBLIC_DOMAIN.endsWith('/') ? PUBLIC_DOMAIN.slice(0, -1) : PUBLIC_DOMAIN;
 
     const files = getAllMarkdownFiles(POSTS_DIR);
-    
+
     for (const filePath of files) {
         let content = fs.readFileSync(filePath, "utf-8");
         const dir = path.dirname(filePath);
@@ -155,8 +155,8 @@ async function main() {
             console.log(`📝 已更新 Markdown 檔案: ${path.relative(POSTS_DIR, filePath)}`);
         }
     }
-    
-    console.log("🎉 圖片全數遷移至 Cloudflare R2 並修改完成！請執行 pnpm run sync-db");
+
+    console.log("🎉 圖片全數遷移至 Cloudflare R2 並修改完成！請執行 pnpm run publish");
 }
 
 main().catch(console.error);
