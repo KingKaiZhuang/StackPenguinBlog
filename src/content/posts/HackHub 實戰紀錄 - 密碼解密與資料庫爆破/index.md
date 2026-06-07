@@ -1,22 +1,24 @@
 ---
 title: HackHub 實戰紀錄 - 密碼解密與資料庫爆破
-date: 2026-06-07
+published: 2026-06-07
+description: "在這篇 HackHub 實戰紀錄中，我們將練習密碼解密、資料庫爆破等技巧，以提高資訊安全認知。"
+cover: "https://img.stackpenguin.com/images/HackHub%20%E5%AF%A6%E6%88%B0%E7%B4%80%E9%8C%84%20-%20%E5%AF%86%E7%A2%BC%E8%A7%A3%E5%AF%86%E8%88%87%E8%B3%87%E6%96%99%E5%BA%AB%E7%88%86%E7%A0%B4/hackhub-password-cracking.jpg"
+coverInContent: false
 tags:
   - openssl
   - ftp
   - nmap
   - hydra
   - 滲透測試
-categories:
-  - HackHub
-  - 教學
+category: HackHub
+draft: false
 ---
 
-在這篇 HackHub（一款 Steam 上的資訊安全模擬遊戲）實戰紀錄中，我們將練習一系列的資訊收集、字串解密、遠端 FTP 存取，以及使用 hydra 對資料庫服務進行密碼爆破的流程。
+在這篇 HackHub（一款 Steam 上的資訊安全模擬遊戲）實戰紀錄中，我們將練習一系列的 <mark>資訊收集</mark>、<mark>字串解密</mark>、<mark>遠端 FTP 存取</mark>，以及使用 <mark>hydra</mark> 對資料庫服務進行 <mark>密碼爆破</mark> 的流程。
 
 ## 1. 資訊收集：WHOIS 查詢與字串解密
 
-首先，我們針對目標網域進行 `whois` 查詢，取得聯絡人資訊。接著，我們發現了一串疑似編碼過的密碼字串。在嘗試使用 `base64 -d` 失敗後，我們查看了 `help` 指令列表，決定安裝 `openssl` 套件來進行解密。
+首先，我們針對目標網域進行 `whois` 查詢，取得聯絡人資訊。接著，我們發現了一串疑似編碼過的密碼字串。在嘗試使用 `base64 -d` 失敗後，我們查看了 `help` 指令列表，決定安裝 <mark>openssl</mark> 套件來進行解密。
 
 ```shell
 $ whois occasional-behest.biz
@@ -42,11 +44,11 @@ $ openssl -dec TXkgYmFuayBwYXNzd29yZDogUkRZY1pjV3B2UDd2ejdS
 Decrypted text: "My bank password: RDYcZcWpvP7vz7R"
 ```
 
-成功解密出密碼為 `RDYcZcWpvP7vz7R`。
+成功解密出密碼為 <mark>RDYcZcWpvP7vz7R</mark>。
 
 ## 2. 遠端存取：連接 FTP 伺服器並取得機密檔案
 
-取得了目標的連線資訊與密碼後，我們使用 `ftp` 指令連線至遠端伺服器，並在 `secret` 資料夾中找到了一份包含信用卡資訊的機密檔案。
+取得了目標的連線資訊與密碼後，我們使用 `ftp` 指令連線至遠端伺服器，並在 `secret` 資料夾中找到了一份包含 <mark>信用卡資訊</mark> 的機密檔案。
 
 ```shell
 $ ftp -h 202.9.247.52 -u Grzegorz_Langat25 -p 6VDO9Sxywv9rCKF
@@ -68,7 +70,7 @@ Disconnected ftp server.
 
 ## 3. 掃描目標網路服務
 
-接下來，我們鎖定另一個網域，透過 `nslookup` 找出其真實 IP 位址，並使用 `nmap` 進行連接埠掃描。掃描結果顯示該主機的 3306 埠（資料庫服務）對外開放。
+接下來，我們鎖定另一個網域，透過 `nslookup` 找出其真實 IP 位址，並使用 `nmap` 進行連接埠掃描。掃描結果顯示該主機的 <mark>3306 埠</mark>（<mark>資料庫服務</mark>）對外開放。
 
 ```shell
 $ nslookup eager-disguise.name
@@ -88,7 +90,7 @@ PORT	STATE	SERVICE
 
 ## 4. 暴力破解資料庫登入密碼
 
-針對開放的資料庫服務，我們安裝了密碼爆破工具 `hydra`。在嘗試調整參數格式後，成功搭配本地端的字典檔（`wordlist.lst`）破解出登入憑證。
+針對開放的 <mark>資料庫服務</mark>，我們安裝了密碼爆破工具 <mark>hydra</mark>。在嘗試調整參數格式後，成功搭配本地端的字典檔（`wordlist.lst`）破解出登入憑證。
 
 ```shell
 $ apt-get install hydra
@@ -114,4 +116,4 @@ Login information matched!
 +-------+----------+
 ```
 
-最終成功取得了資料庫的存取權限：帳號 `guest`、密碼 `barefoot`。
+最終成功取得了資料庫的存取權限：帳號 <mark>guest</mark>、密碼 <mark>barefoot</mark>。
