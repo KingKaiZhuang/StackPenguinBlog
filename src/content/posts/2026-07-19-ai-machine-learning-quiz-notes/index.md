@@ -2,7 +2,7 @@
 title: "AI / Machine Learning 測驗觀念筆記：從監督式學習到 Responsible AI"
 published: 2026-07-19
 description: "整理 AI 與機器學習測驗中的核心觀念，包含 supervised learning、reinforcement learning、LLM、模型訓練與 Responsible AI governance。"
-cover: ""
+cover: "https://img.stackpenguin.com/images/2026-07-19-ai-machine-learning-quiz-notes/ai-machine-learning-notes.jpg"
 coverInContent: false
 tags:
   - AI
