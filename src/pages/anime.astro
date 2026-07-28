@@ -152,7 +152,30 @@ const completedList = completedData
     ? await processBangumiData(completedData, "completed")
     : [];
 
-const animeList = [...watchingList, ...completedList];
+const manualAnimeList = [
+    {
+        title: "火影忍者",
+        status: "completed",
+        rating: 7.6,
+        cover: "https://lain.bgm.tv/pic/cover/m/4d/d7/3425_znNRa.jpg",
+        description:
+            "漩渦鳴人為了得到大家認同、成為火影，與夥伴一起踏上忍者修行與冒險的經典作品。",
+        episodes: "220 episodes",
+        year: "2002-10-03",
+        genre: ["忍者", "熱血", "少年"],
+        studio: "Studio Pierrot",
+        link: "https://bgm.tv/subject/3425",
+        progress: 220,
+        totalEpisodes: 220,
+        startDate: "2002-10-03",
+        endDate: "2007-02-08",
+    },
+];
+
+const animeList = [...manualAnimeList, ...watchingList, ...completedList].filter(
+    (anime, index, list) =>
+        list.findIndex((item) => item.link === anime.link) === index,
+);
 
 // 获取状态的翻译文本和样式
 function getStatusInfo(status: string) {
@@ -258,7 +281,7 @@ const stats = {
                 <h2 class="text-2xl font-bold text-black/90 dark:text-white/90 mb-4">
                     {i18n(I18nKey.animeList)}
                 </h2>
-                {!isBangumiConfigured ? (
+                {animeList.length === 0 && !isBangumiConfigured ? (
                     <div class="text-center py-12">
                         <div class="text-5xl mb-4">😢</div>
                         <h3 class="text-xl font-medium text-black/80 dark:text-white/80 mb-2">
