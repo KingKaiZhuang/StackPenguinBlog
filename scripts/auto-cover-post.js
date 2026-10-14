@@ -83,7 +83,7 @@ Rules:
 2. description 使用繁體中文
 3. tags 最多 5 個
 4. image_filename 使用英文 kebab-case
-5. key_text: 文章主題的繁體中文關鍵文字 (例如: 學習 PYTHON, 設計系統, 高效率習慣)
+5. key_text: 封面用的繁體中文主標題，限 6–14 個中文字或必要英文技術詞，適合分成 1–2 行（例如: AI／機器學習、Docker 部署筆記、加密影像資料隱藏）
 6. topic_description: 必須是英文 (English)，填入與關鍵文字相關的簡潔視覺內容描述 (例如: a python snake, a terminal window, brackets, an IDE icon, and data visualizations)
 `
                 },
@@ -160,7 +160,25 @@ async function main() {
 
         console.log("🎨 產生封面圖片...");
 
-        const imagePrompt = `Modern minimalist vector illustration, flat design, clean lines, negative space, a soft pastel and muted color palette. The text "${meta.key_text}" in a large, clean, bold sans-serif font, centered prominently. Small, clear, relevant icons of ${meta.topic_description} frame the text in a clean layout. Clean white gradient background. High quality, detailed illustration.`;
+        const imagePrompt = `Create a square 1:1 technical blog cover in a consistent pastel infographic-card visual system.
+
+Topic icons: ${meta.topic_description}.
+Primary title (Traditional Chinese, reproduce exactly): "${meta.key_text}".
+
+Required layout:
+- Pale lavender and ice-blue background, soft rounded abstract blobs in the corners, tiny dotted decorations, generous white space.
+- The upper half contains 3–5 small, neat topic icons connected by thin dotted lines; use simple flat vector infographic illustrations, not photos.
+- The lower-middle area contains the primary title in large, crisp, dark-navy Traditional Chinese typography, arranged over one or two lines.
+- If short labels are useful, use at most three tiny labels beneath the icons. Keep all text readable and do not invent extra wording.
+
+Fixed visual language:
+- Friendly educational technology blog card; clean rounded rectangles, thin navy outlines, pastel blue, periwinkle, lavender, mint, and a small restrained warm-yellow accent.
+- Flat vector illustration with gentle soft shadows; polished, calm, and consistent with a Chinese learning-notes blog.
+
+Constraints:
+- Square cover only; no landscape composition.
+- The title must be spelled exactly as provided and be the most prominent text.
+- No logos, watermark, photorealism, 3D rendering, dark saturated background, handwritten type, or cluttered collage.`;
 
         const imageBuffer =
             await generateImage(imagePrompt);
