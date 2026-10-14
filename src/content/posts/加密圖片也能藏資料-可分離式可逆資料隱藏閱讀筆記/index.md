@@ -2,7 +2,7 @@
 title: 加密圖片也能藏資料：讀懂 Separable Reversible Data Hiding
 published: 2026-10-14
 description: "以論文閱讀筆記的方式，整理可分離式加密影像可逆資料隱藏的三把鑰匙情境、LSB 壓縮、資料擷取與無失真復原。"
-cover: "./cover.png"
+cover: "./cover-auto.jpg"
 coverInContent: false
 tags:
   - image-encryption
